@@ -1,0 +1,4060 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_304abd8a0a05e4200e5e1a38cdfed079 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_304abd8a0a05e4200e5e1a38cdfed079" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_304abd8a0a05e4200e5e1a38cdfed079 = L.map(
+                "map_304abd8a0a05e4200e5e1a38cdfed079",
+                {
+                    center: [49.0195333, 12.0974869],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_edf597750f523fcf116a830dbd196118 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_edf597750f523fcf116a830dbd196118.addTo(map_304abd8a0a05e4200e5e1a38cdfed079);
+        
+    
+            var tile_layer_1e9172a0b07512987e9dc037ccfa852c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1e9172a0b07512987e9dc037ccfa852c.addTo(map_304abd8a0a05e4200e5e1a38cdfed079);
+        
+    
+            var tile_layer_8471fa95fe0ab8490faa42aeb65e9742 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy;",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8471fa95fe0ab8490faa42aeb65e9742.addTo(map_304abd8a0a05e4200e5e1a38cdfed079);
+        
+    
+            var feature_group_c8ba4b2fd67393b170568e1ba10a8493 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_a627849b2758c1da059ae4d258cdd6cc = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            marker_cluster_a627849b2758c1da059ae4d258cdd6cc.addTo(feature_group_c8ba4b2fd67393b170568e1ba10a8493);
+        
+    
+            var feature_group_819eb8b21496d6faab837ae092286f43 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_0be434cd5a6af18a872ccc39bf0c6403 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_4f544bfb17fd757a21495431271211f7 = L.marker(
+                [49.0195333, 12.0974869],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_d8e8c0eb91a3e23c86b91bc8e98a7a69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38b19fabcff5dead4489b64590490007 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a31d62f5b638aa943845a316555a43a4 = $(`<div id="html_a31d62f5b638aa943845a316555a43a4" style="width: 100.0%; height: 100.0%;">         <b>Post Youth Kollektiv</b><br>         Regensburg, DE<br>         Contact: postyouthkollektiv@riseup.net<br><a href="https://linktr.ee/postyouthkollektiv">web</a> | <a href="https://www.instagram.com/postyouthkollektiv">insta</a> | <a href="https://www.facebook.com/postyouthkollektiv">fb</a></div>`)[0];
+                popup_38b19fabcff5dead4489b64590490007.setContent(html_a31d62f5b638aa943845a316555a43a4);
+            
+        
+
+        marker_4f544bfb17fd757a21495431271211f7.bindPopup(popup_38b19fabcff5dead4489b64590490007)
+        ;
+
+        
+    
+    
+                marker_4f544bfb17fd757a21495431271211f7.setIcon(icon_d8e8c0eb91a3e23c86b91bc8e98a7a69);
+            
+    
+            var marker_fb336434f7101ede7ee8450f93f850e3 = L.marker(
+                [49.453872, 11.077298],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_61efbe02cd5182c87e8a448c8e84bcd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97157b3433215543d390ce5e25b44147 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b98fcd22c801b48358efc483d878ef4 = $(`<div id="html_7b98fcd22c801b48358efc483d878ef4" style="width: 100.0%; height: 100.0%;">         <b>Projekt 31</b><br>         Nürnberg, DE<br>         Contact: programm@projekt31.org<br><a href="https://projekt31.org/">web</a></div>`)[0];
+                popup_97157b3433215543d390ce5e25b44147.setContent(html_7b98fcd22c801b48358efc483d878ef4);
+            
+        
+
+        marker_fb336434f7101ede7ee8450f93f850e3.bindPopup(popup_97157b3433215543d390ce5e25b44147)
+        ;
+
+        
+    
+    
+                marker_fb336434f7101ede7ee8450f93f850e3.setIcon(icon_61efbe02cd5182c87e8a448c8e84bcd8);
+            
+    
+            var marker_9c49b8ae9b7dba20c7996b6c77c448b3 = L.marker(
+                [49.453872, 11.077298],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_97bbc0b48cdc6ab23263b793e8848518 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c09acc978c08a917966be027eb0f8112 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_972b443657b5dcf55f5df3a6bb975cac = $(`<div id="html_972b443657b5dcf55f5df3a6bb975cac" style="width: 100.0%; height: 100.0%;">         <b>Schwarze Liste</b><br>         Nürnberg, DE<br>         Contact: <br><a href="https://schwarzeliste.info/">web</a></div>`)[0];
+                popup_c09acc978c08a917966be027eb0f8112.setContent(html_972b443657b5dcf55f5df3a6bb975cac);
+            
+        
+
+        marker_9c49b8ae9b7dba20c7996b6c77c448b3.bindPopup(popup_c09acc978c08a917966be027eb0f8112)
+        ;
+
+        
+    
+    
+                marker_9c49b8ae9b7dba20c7996b6c77c448b3.setIcon(icon_97bbc0b48cdc6ab23263b793e8848518);
+            
+    
+            var marker_ec7fb71aae5089f36521ad22f13564c2 = L.marker(
+                [50.3187507, 11.9162992],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_6c3c9afe82f9f5428a7d17f24471a1d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_274018bcf64551be331e4b0ad6380d70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_791509ec8f92d6e935247e88a0b75062 = $(`<div id="html_791509ec8f92d6e935247e88a0b75062" style="width: 100.0%; height: 100.0%;">         <b>lifeisafunnything</b><br>         Hof, DE<br>         Contact: <br><a href="https://www.facebook.com/lifeisafunnything123">fb</a></div>`)[0];
+                popup_274018bcf64551be331e4b0ad6380d70.setContent(html_791509ec8f92d6e935247e88a0b75062);
+            
+        
+
+        marker_ec7fb71aae5089f36521ad22f13564c2.bindPopup(popup_274018bcf64551be331e4b0ad6380d70)
+        ;
+
+        
+    
+    
+                marker_ec7fb71aae5089f36521ad22f13564c2.setIcon(icon_6c3c9afe82f9f5428a7d17f24471a1d8);
+            
+    
+            var marker_a75c6001d3a1251ef94143ba76681328 = L.marker(
+                [50.3187507, 11.9162992],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_a3064049f0a05c1b046664be7148739a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e580d4c9580e390a1c5f76725af072c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b3264aa0e971c7e5cdde4c0dea69369 = $(`<div id="html_5b3264aa0e971c7e5cdde4c0dea69369" style="width: 100.0%; height: 100.0%;">         <b>Vanishing Walls e.V.</b><br>         Hof, DE<br>         Contact: <br><a href="https://www.instagram.com/vanishing.walls">insta</a></div>`)[0];
+                popup_e580d4c9580e390a1c5f76725af072c0.setContent(html_5b3264aa0e971c7e5cdde4c0dea69369);
+            
+        
+
+        marker_a75c6001d3a1251ef94143ba76681328.bindPopup(popup_e580d4c9580e390a1c5f76725af072c0)
+        ;
+
+        
+    
+    
+                marker_a75c6001d3a1251ef94143ba76681328.setIcon(icon_a3064049f0a05c1b046664be7148739a);
+            
+    
+            var marker_ff3d12689dd085d1eaa3aec43ba0167c = L.marker(
+                [50.3187507, 11.9162992],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_097f4da1f25f23ac1599fa459d9add3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4a095e3bf3eba72cc4fbb8464e21c6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65bd2be14c5088a37309571cefabc05f = $(`<div id="html_65bd2be14c5088a37309571cefabc05f" style="width: 100.0%; height: 100.0%;">         <b>Zur Linde</b><br>         Hof, DE<br>         Contact: <br><a href="https://www.instagram.com/zur_linde/">insta</a></div>`)[0];
+                popup_a4a095e3bf3eba72cc4fbb8464e21c6e.setContent(html_65bd2be14c5088a37309571cefabc05f);
+            
+        
+
+        marker_ff3d12689dd085d1eaa3aec43ba0167c.bindPopup(popup_a4a095e3bf3eba72cc4fbb8464e21c6e)
+        ;
+
+        
+    
+    
+                marker_ff3d12689dd085d1eaa3aec43ba0167c.setIcon(icon_097f4da1f25f23ac1599fa459d9add3b);
+            
+    
+            var marker_8c78a8041a17d4b78df4591ebf1f3a62 = L.marker(
+                [49.7933723, 9.9309779],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_76005b7ba2cd4c8d2eda050ba23466cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cdeb7c53658dbe339bfc72d1b47b7b00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b259276ae3f384d2dfa116193097fb76 = $(`<div id="html_b259276ae3f384d2dfa116193097fb76" style="width: 100.0%; height: 100.0%;">         <b>bigdippershows</b><br>         Würzburg, DE<br>         Contact: <br><a href="https://www.instagram.com/bigdippershows/">insta</a></div>`)[0];
+                popup_cdeb7c53658dbe339bfc72d1b47b7b00.setContent(html_b259276ae3f384d2dfa116193097fb76);
+            
+        
+
+        marker_8c78a8041a17d4b78df4591ebf1f3a62.bindPopup(popup_cdeb7c53658dbe339bfc72d1b47b7b00)
+        ;
+
+        
+    
+    
+                marker_8c78a8041a17d4b78df4591ebf1f3a62.setIcon(icon_76005b7ba2cd4c8d2eda050ba23466cb);
+            
+    
+            var marker_a3ef6d409b68938fc2b08cbaac913bde = L.marker(
+                [49.7933723, 9.9309779],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_b0d3a63dd22a09f30d39fb9ae0032645 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2ee819044b97fd981bccd1b77df1873 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d027dd57443bd279f8d4786969cc8ab = $(`<div id="html_3d027dd57443bd279f8d4786969cc8ab" style="width: 100.0%; height: 100.0%;">         <b>XYEAHX Shows</b><br>         Würzburg, DE<br>         Contact: <br><a href="https://www.instagram.com/xyeahx_shows/">insta</a></div>`)[0];
+                popup_a2ee819044b97fd981bccd1b77df1873.setContent(html_3d027dd57443bd279f8d4786969cc8ab);
+            
+        
+
+        marker_a3ef6d409b68938fc2b08cbaac913bde.bindPopup(popup_a2ee819044b97fd981bccd1b77df1873)
+        ;
+
+        
+    
+    
+                marker_a3ef6d409b68938fc2b08cbaac913bde.setIcon(icon_b0d3a63dd22a09f30d39fb9ae0032645);
+            
+    
+            var marker_2f52ca02864e605831c1195291f7db2d = L.marker(
+                [49.8916044, 10.8868478],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_93968741c4ba44400d13f0f59b1bd45a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39a67ea4502d4e51eaa095d5f80a8e35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd21930fd1d2ae4a72a266a2272d717d = $(`<div id="html_dd21930fd1d2ae4a72a266a2272d717d" style="width: 100.0%; height: 100.0%;">         <b>Unterste Brücke</b><br>         Bamberg, DE<br>         Contact: <br><a href="https://www.hopp.bio/unterstebrueckelinks">web</a> | <a href="https://www.instagram.com/unterstebruecke/">insta</a></div>`)[0];
+                popup_39a67ea4502d4e51eaa095d5f80a8e35.setContent(html_dd21930fd1d2ae4a72a266a2272d717d);
+            
+        
+
+        marker_2f52ca02864e605831c1195291f7db2d.bindPopup(popup_39a67ea4502d4e51eaa095d5f80a8e35)
+        ;
+
+        
+    
+    
+                marker_2f52ca02864e605831c1195291f7db2d.setIcon(icon_93968741c4ba44400d13f0f59b1bd45a);
+            
+    
+            var marker_7669b86696353adc14529f034d2e3768 = L.marker(
+                [49.8916044, 10.8868478],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_0120681fa31726350c1d9bc850d14e39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c5d6edc81164a0d63ec3f3bb9295070 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cfd457f424c3fb56f82197acfb525f7 = $(`<div id="html_5cfd457f424c3fb56f82197acfb525f7" style="width: 100.0%; height: 100.0%;">         <b>DIY Shows in Bamberg </b><br>         Bamberg, DE<br>         Contact: <br><a href="https://www.facebook.com/DIYshowsinbamberg">fb</a></div>`)[0];
+                popup_8c5d6edc81164a0d63ec3f3bb9295070.setContent(html_5cfd457f424c3fb56f82197acfb525f7);
+            
+        
+
+        marker_7669b86696353adc14529f034d2e3768.bindPopup(popup_8c5d6edc81164a0d63ec3f3bb9295070)
+        ;
+
+        
+    
+    
+                marker_7669b86696353adc14529f034d2e3768.setIcon(icon_0120681fa31726350c1d9bc850d14e39);
+            
+    
+            var marker_df6acad71a748807e4dd840d14e405bb = L.marker(
+                [49.8916044, 10.8868478],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_ed27fccc69ef6943af56c9b733441188 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6cf0e60fa6989ea800f79c5ccbaab44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e83c803df412d21c0f2c53445cc5cf9d = $(`<div id="html_e83c803df412d21c0f2c53445cc5cf9d" style="width: 100.0%; height: 100.0%;">         <b>UpYours Bamberg</b><br>         Bamberg, DE<br>         Contact: <br><a href="https://www.instagram.com/upyoursbamberg">insta</a></div>`)[0];
+                popup_b6cf0e60fa6989ea800f79c5ccbaab44.setContent(html_e83c803df412d21c0f2c53445cc5cf9d);
+            
+        
+
+        marker_df6acad71a748807e4dd840d14e405bb.bindPopup(popup_b6cf0e60fa6989ea800f79c5ccbaab44)
+        ;
+
+        
+    
+    
+                marker_df6acad71a748807e4dd840d14e405bb.setIcon(icon_ed27fccc69ef6943af56c9b733441188);
+            
+    
+            var marker_01e3884b33aa3b5ac13904a8647afff8 = L.marker(
+                [48.3984968, 9.9912458],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_ed589827c4843fbe205bfa3b4ae8db63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae78e102007d0ce7f11ebb4e0b939ef6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5665b2f826e18588241a2604b4cc2630 = $(`<div id="html_5665b2f826e18588241a2604b4cc2630" style="width: 100.0%; height: 100.0%;">         <b>Affenkrach DIY Shows</b><br>         Ulm, DE<br>         Contact: <br><a href="https://www.instagram.com/affenkrach/">insta</a></div>`)[0];
+                popup_ae78e102007d0ce7f11ebb4e0b939ef6.setContent(html_5665b2f826e18588241a2604b4cc2630);
+            
+        
+
+        marker_01e3884b33aa3b5ac13904a8647afff8.bindPopup(popup_ae78e102007d0ce7f11ebb4e0b939ef6)
+        ;
+
+        
+    
+    
+                marker_01e3884b33aa3b5ac13904a8647afff8.setIcon(icon_ed589827c4843fbe205bfa3b4ae8db63);
+            
+    
+            var marker_3b4fa8b94f20a6712d5b38cd54318054 = L.marker(
+                [48.3984968, 9.9912458],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_47cafee964637779ca4a5ee3257e4f46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57fcb93c6e21480c8dd20023cc847dd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce19434cfca5eed60eeaec40bad256cb = $(`<div id="html_ce19434cfca5eed60eeaec40bad256cb" style="width: 100.0%; height: 100.0%;">         <b>Club Schilli</b><br>         Ulm, DE<br>         Contact: <br><a href="https://www.instagram.com/clubschilli/">insta</a> | <a href="https://www.facebook.com/clubschilli/">fb</a></div>`)[0];
+                popup_57fcb93c6e21480c8dd20023cc847dd3.setContent(html_ce19434cfca5eed60eeaec40bad256cb);
+            
+        
+
+        marker_3b4fa8b94f20a6712d5b38cd54318054.bindPopup(popup_57fcb93c6e21480c8dd20023cc847dd3)
+        ;
+
+        
+    
+    
+                marker_3b4fa8b94f20a6712d5b38cd54318054.setIcon(icon_47cafee964637779ca4a5ee3257e4f46);
+            
+    
+            var marker_cbf739eb7261f88f05097f0e4c46fe5e = L.marker(
+                [49.9446345, 11.5743543],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_4f44e8402e1408b5b20cd4987b178fa0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4811f9f77005bf46fe12f3a01c778c42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a45e0001ccfb6bbc70c644c2bab6551a = $(`<div id="html_a45e0001ccfb6bbc70c644c2bab6551a" style="width: 100.0%; height: 100.0%;">         <b>Glashaus Bayreuth </b><br>         Bayreuth, DE<br>         Contact: <br><a href="https://www.instagram.com/glashaus_bt/">insta</a> | <a href="https://www.facebook.com/glashausbt">fb</a></div>`)[0];
+                popup_4811f9f77005bf46fe12f3a01c778c42.setContent(html_a45e0001ccfb6bbc70c644c2bab6551a);
+            
+        
+
+        marker_cbf739eb7261f88f05097f0e4c46fe5e.bindPopup(popup_4811f9f77005bf46fe12f3a01c778c42)
+        ;
+
+        
+    
+    
+                marker_cbf739eb7261f88f05097f0e4c46fe5e.setIcon(icon_4f44e8402e1408b5b20cd4987b178fa0);
+            
+    
+            var marker_7bfbabcf1a537b76cd4d28c3a86883ef = L.marker(
+                [48.3690341, 10.8979522],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_311c24acddfa6ab4d0d78cc74b590eb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b5c1753a02198244f4a3c142977e956 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ac9ae57de2e29381e55fe786c76f699 = $(`<div id="html_2ac9ae57de2e29381e55fe786c76f699" style="width: 100.0%; height: 100.0%;">         <b>Ballonfabrik</b><br>         Augsburg, DE<br>         Contact: <br><a href="https://www.instagram.com/ballonfabrik_augsburg/">insta</a></div>`)[0];
+                popup_7b5c1753a02198244f4a3c142977e956.setContent(html_2ac9ae57de2e29381e55fe786c76f699);
+            
+        
+
+        marker_7bfbabcf1a537b76cd4d28c3a86883ef.bindPopup(popup_7b5c1753a02198244f4a3c142977e956)
+        ;
+
+        
+    
+    
+                marker_7bfbabcf1a537b76cd4d28c3a86883ef.setIcon(icon_311c24acddfa6ab4d0d78cc74b590eb5);
+            
+    
+            var marker_a203f2c9ae74ad0b604c1a2d377938be = L.marker(
+                [48.3690341, 10.8979522],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_0402444e7f6348308d2ab56c9b7609d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a52a0f41cb53b95408604fb5e2ffc3c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e3ec26f67a336220980895ce79ac897 = $(`<div id="html_8e3ec26f67a336220980895ce79ac897" style="width: 100.0%; height: 100.0%;">         <b>Kraetzwerk e.V.</b><br>         Augsburg, DE<br>         Contact: <br><a href="https://www.instagram.com/kraetzwerk.e.v">insta</a></div>`)[0];
+                popup_a52a0f41cb53b95408604fb5e2ffc3c2.setContent(html_8e3ec26f67a336220980895ce79ac897);
+            
+        
+
+        marker_a203f2c9ae74ad0b604c1a2d377938be.bindPopup(popup_a52a0f41cb53b95408604fb5e2ffc3c2)
+        ;
+
+        
+    
+    
+                marker_a203f2c9ae74ad0b604c1a2d377938be.setIcon(icon_0402444e7f6348308d2ab56c9b7609d7);
+            
+    
+            var marker_c0c9305a5d9902bfaa9a4215c9da4fc0 = L.marker(
+                [48.3690341, 10.8979522],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_0aa6f36129886b52c92d1a3b619f077a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a217f7c318bd5fb285a3c4e1936387ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99677bf36ed5936cd91d264126c1bf61 = $(`<div id="html_99677bf36ed5936cd91d264126c1bf61" style="width: 100.0%; height: 100.0%;">         <b>City Club</b><br>         Augsburg, DE<br>         Contact: <br><a href="https://www.instagram.com/city_club_cafe">insta</a></div>`)[0];
+                popup_a217f7c318bd5fb285a3c4e1936387ab.setContent(html_99677bf36ed5936cd91d264126c1bf61);
+            
+        
+
+        marker_c0c9305a5d9902bfaa9a4215c9da4fc0.bindPopup(popup_a217f7c318bd5fb285a3c4e1936387ab)
+        ;
+
+        
+    
+    
+                marker_c0c9305a5d9902bfaa9a4215c9da4fc0.setIcon(icon_0aa6f36129886b52c92d1a3b619f077a);
+            
+    
+            var marker_00a82f2a2009ec1f65c99194f525a833 = L.marker(
+                [48.1371079, 11.5753822],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_8355073842134660c51f41636899bd7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c2017a48a5ee2f8896963a6a9097792 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84dfe20cc1409f496b2eed9f32b34eb6 = $(`<div id="html_84dfe20cc1409f496b2eed9f32b34eb6" style="width: 100.0%; height: 100.0%;">         <b>Kafe Marat</b><br>         München, DE<br>         Contact: kontakt@kafemarat.net<br><a href="https://kafemarat.net">web</a></div>`)[0];
+                popup_3c2017a48a5ee2f8896963a6a9097792.setContent(html_84dfe20cc1409f496b2eed9f32b34eb6);
+            
+        
+
+        marker_00a82f2a2009ec1f65c99194f525a833.bindPopup(popup_3c2017a48a5ee2f8896963a6a9097792)
+        ;
+
+        
+    
+    
+                marker_00a82f2a2009ec1f65c99194f525a833.setIcon(icon_8355073842134660c51f41636899bd7a);
+            
+    
+            var marker_a75ca775d34d11fed483bc5d7f15dcbd = L.marker(
+                [48.1371079, 11.5753822],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_105dda4aa2c8828e856d1072825c7ca1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e872236c8943dfeb15be5adc3f80cd5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f2d8c04f16d2826fed79d73d2ff7ad2 = $(`<div id="html_7f2d8c04f16d2826fed79d73d2ff7ad2" style="width: 100.0%; height: 100.0%;">         <b>Kafe Kult</b><br>         München, DE<br>         Contact: booking@kafekult.de<br><a href="https://www.instagram.com/kafekult/">insta</a></div>`)[0];
+                popup_5e872236c8943dfeb15be5adc3f80cd5.setContent(html_7f2d8c04f16d2826fed79d73d2ff7ad2);
+            
+        
+
+        marker_a75ca775d34d11fed483bc5d7f15dcbd.bindPopup(popup_5e872236c8943dfeb15be5adc3f80cd5)
+        ;
+
+        
+    
+    
+                marker_a75ca775d34d11fed483bc5d7f15dcbd.setIcon(icon_105dda4aa2c8828e856d1072825c7ca1);
+            
+    
+            var marker_0bf694201baac8a113756ef3b42af10b = L.marker(
+                [48.1371079, 11.5753822],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_87b0af955d084f4c504d51518fbb7bc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_959a124596dd10bbe415d258c442688a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab72936e87402f3b1e88035165ce316d = $(`<div id="html_ab72936e87402f3b1e88035165ce316d" style="width: 100.0%; height: 100.0%;">         <b>CoreChaosConcerts</b><br>         München, DE<br>         Contact: corechaosofficial@gmail.com<br><a href="https://linktr.ee/CoreChaosOfficial">web</a> | <a href="https://www.instagram.com/corechaosconcerts/">insta</a> | <a href="https://www.facebook.com/corechaosofficial">fb</a></div>`)[0];
+                popup_959a124596dd10bbe415d258c442688a.setContent(html_ab72936e87402f3b1e88035165ce316d);
+            
+        
+
+        marker_0bf694201baac8a113756ef3b42af10b.bindPopup(popup_959a124596dd10bbe415d258c442688a)
+        ;
+
+        
+    
+    
+                marker_0bf694201baac8a113756ef3b42af10b.setIcon(icon_87b0af955d084f4c504d51518fbb7bc7);
+            
+    
+            var marker_aada848e4bddb60dbb7fc4f583d65648 = L.marker(
+                [47.6856552, 9.8342247],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_80aa9e2db9d1b0a0c42d0ecb0f0bae59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_832cbe3dbe4ff0d30d4cbd821c36b668 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a697dc60f2f6562a337c06196d3cd54e = $(`<div id="html_a697dc60f2f6562a337c06196d3cd54e" style="width: 100.0%; height: 100.0%;">         <b>Jugendzentrum Tonne Wangen e.V.</b><br>         Wangen im Allgäu, DE<br>         Contact: <br><a href="https://www.instagram.com/juzetonne_wangen/">insta</a> | <a href="https://www.facebook.com/JugendzentrumTonne/">fb</a></div>`)[0];
+                popup_832cbe3dbe4ff0d30d4cbd821c36b668.setContent(html_a697dc60f2f6562a337c06196d3cd54e);
+            
+        
+
+        marker_aada848e4bddb60dbb7fc4f583d65648.bindPopup(popup_832cbe3dbe4ff0d30d4cbd821c36b668)
+        ;
+
+        
+    
+    
+                marker_aada848e4bddb60dbb7fc4f583d65648.setIcon(icon_80aa9e2db9d1b0a0c42d0ecb0f0bae59);
+            
+    
+            var marker_c36bb94c6a821ca005ffcfd175d29ea3 = L.marker(
+                [47.9477942, 11.1049697],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_c125714911c54cf571e66e16bc95b30d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c73e0db63f98663a7ae714d6633dc1dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c201d453ae98d2fc1ffd7c35bf51c211 = $(`<div id="html_c201d453ae98d2fc1ffd7c35bf51c211" style="width: 100.0%; height: 100.0%;">         <b>Freie Kunstanstalt</b><br>         Dießen am Ammersee, DE<br>         Contact: <br><a href="https://freie-kunstanstalt.de">web</a> | <a href="https://www.instagram.com/freie_kunstanstalt_e.v">insta</a></div>`)[0];
+                popup_c73e0db63f98663a7ae714d6633dc1dc.setContent(html_c201d453ae98d2fc1ffd7c35bf51c211);
+            
+        
+
+        marker_c36bb94c6a821ca005ffcfd175d29ea3.bindPopup(popup_c73e0db63f98663a7ae714d6633dc1dc)
+        ;
+
+        
+    
+    
+                marker_c36bb94c6a821ca005ffcfd175d29ea3.setIcon(icon_c125714911c54cf571e66e16bc95b30d);
+            
+    
+            var marker_d7f672fffd389e435bccf40eddadeb8b = L.marker(
+                [49.0068705, 8.4034195],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_7b521dfedda15b89ff060c0bc5906513 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fec0fa902da7f80be4e003fb4ba5a3f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8be5c78dab79b69dbd0824dcaae8839 = $(`<div id="html_f8be5c78dab79b69dbd0824dcaae8839" style="width: 100.0%; height: 100.0%;">         <b>P8</b><br>         Karlsruhe, DE<br>         Contact: booking@p-acht.org<br><a href="https://p-acht.org">web</a></div>`)[0];
+                popup_fec0fa902da7f80be4e003fb4ba5a3f1.setContent(html_f8be5c78dab79b69dbd0824dcaae8839);
+            
+        
+
+        marker_d7f672fffd389e435bccf40eddadeb8b.bindPopup(popup_fec0fa902da7f80be4e003fb4ba5a3f1)
+        ;
+
+        
+    
+    
+                marker_d7f672fffd389e435bccf40eddadeb8b.setIcon(icon_7b521dfedda15b89ff060c0bc5906513);
+            
+    
+            var marker_0a5fbc105bdafee6a4b5db7cc92fedf8 = L.marker(
+                [49.0068705, 8.4034195],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_f3520bf48525e22204381af2f747e187 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_376d079395ff7e0f4af304dc9dc2ff3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b4367dfd86b412f10f630df5d5a1c72 = $(`<div id="html_4b4367dfd86b412f10f630df5d5a1c72" style="width: 100.0%; height: 100.0%;">         <b>Distival Shows</b><br>         Karlsruhe, DE<br>         Contact: distivalcrew@web.de<br><a href="https://www.instagram.com/distivalshows/">insta</a></div>`)[0];
+                popup_376d079395ff7e0f4af304dc9dc2ff3f.setContent(html_4b4367dfd86b412f10f630df5d5a1c72);
+            
+        
+
+        marker_0a5fbc105bdafee6a4b5db7cc92fedf8.bindPopup(popup_376d079395ff7e0f4af304dc9dc2ff3f)
+        ;
+
+        
+    
+    
+                marker_0a5fbc105bdafee6a4b5db7cc92fedf8.setIcon(icon_f3520bf48525e22204381af2f747e187);
+            
+    
+            var marker_6b423a6aad3fec14b92e6676e3e9a1d5 = L.marker(
+                [49.0068705, 8.4034195],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_25b107583edf7aaaa0eecd389cf93039 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e135a3e64d83eb846549a88ef81c2b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5633a61ba2c70882191933bd75df2a67 = $(`<div id="html_5633a61ba2c70882191933bd75df2a67" style="width: 100.0%; height: 100.0%;">         <b>durchsägen konzerte</b><br>         Karlsruhe, DE<br>         Contact: <br><a href="https://www.facebook.com/durchsaegen/">fb</a></div>`)[0];
+                popup_6e135a3e64d83eb846549a88ef81c2b7.setContent(html_5633a61ba2c70882191933bd75df2a67);
+            
+        
+
+        marker_6b423a6aad3fec14b92e6676e3e9a1d5.bindPopup(popup_6e135a3e64d83eb846549a88ef81c2b7)
+        ;
+
+        
+    
+    
+                marker_6b423a6aad3fec14b92e6676e3e9a1d5.setIcon(icon_25b107583edf7aaaa0eecd389cf93039);
+            
+    
+            var marker_afc55f5ab68dd2e4452d1c175363fb87 = L.marker(
+                [49.0068705, 8.4034195],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_67b18ea64483e21f978dc470c1ab8bfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e365c7ba585a811d104810d81f24503 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ed1d1d0ee027d66bd1602f77a175c71 = $(`<div id="html_0ed1d1d0ee027d66bd1602f77a175c71" style="width: 100.0%; height: 100.0%;">         <b>home away from home show</b><br>         Karlsruhe, DE<br>         Contact: homeawayfromhomeshows@gmail.com<br><a href="https://www.facebook.com/homeawayfromhomeshows/">fb</a></div>`)[0];
+                popup_1e365c7ba585a811d104810d81f24503.setContent(html_0ed1d1d0ee027d66bd1602f77a175c71);
+            
+        
+
+        marker_afc55f5ab68dd2e4452d1c175363fb87.bindPopup(popup_1e365c7ba585a811d104810d81f24503)
+        ;
+
+        
+    
+    
+                marker_afc55f5ab68dd2e4452d1c175363fb87.setIcon(icon_67b18ea64483e21f978dc470c1ab8bfe);
+            
+    
+            var marker_e20d0f4d5b4c2f799cee82db6bcc3049 = L.marker(
+                [48.8584568, 8.2040452],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_94269f2ba3bbe6a515a38e4d22f7a667 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0e82dd89d36fec31c3b8d6d358f5c9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_771e4193e972fa326e0f7e20b557617d = $(`<div id="html_771e4193e972fa326e0f7e20b557617d" style="width: 100.0%; height: 100.0%;">         <b>Art canrobert</b><br>         Rastatt, DE<br>         Contact: booking@art-canrobert.de<br><a href="https://art-canrobert.de">web</a> | <a href="https://www.instagram.com/art_canrobert">insta</a></div>`)[0];
+                popup_b0e82dd89d36fec31c3b8d6d358f5c9f.setContent(html_771e4193e972fa326e0f7e20b557617d);
+            
+        
+
+        marker_e20d0f4d5b4c2f799cee82db6bcc3049.bindPopup(popup_b0e82dd89d36fec31c3b8d6d358f5c9f)
+        ;
+
+        
+    
+    
+                marker_e20d0f4d5b4c2f799cee82db6bcc3049.setIcon(icon_94269f2ba3bbe6a515a38e4d22f7a667);
+            
+    
+            var marker_348972821e7199bef00a7f59bc8c6f9e = L.marker(
+                [48.8953937, 9.1895147],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_f5bf8a10b31b5db261e50dd88cf0180c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83fc747ddaf578d19ecfefeca07e8a65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6e40b6358a0ffc772d38015ed95515f = $(`<div id="html_e6e40b6358a0ffc772d38015ed95515f" style="width: 100.0%; height: 100.0%;">         <b>demoz</b><br>         Ludwigsburg, DE<br>         Contact: dz@demoz-lb.de<br><a href="https://www.demoz-lb.de/">web</a> | <a href="https://www.instagram.com/demoz_lb/">insta</a></div>`)[0];
+                popup_83fc747ddaf578d19ecfefeca07e8a65.setContent(html_e6e40b6358a0ffc772d38015ed95515f);
+            
+        
+
+        marker_348972821e7199bef00a7f59bc8c6f9e.bindPopup(popup_83fc747ddaf578d19ecfefeca07e8a65)
+        ;
+
+        
+    
+    
+                marker_348972821e7199bef00a7f59bc8c6f9e.setIcon(icon_f5bf8a10b31b5db261e50dd88cf0180c);
+            
+    
+            var marker_143e58a4511006dc61d4e4542f9626d1 = L.marker(
+                [48.5203263, 9.053596],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_b3a4c697484818852440f9e507edeb16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cf9371e2f7c29ce00c8699ad57209ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d68d7fbaffb84992a5328eba8a23c15e = $(`<div id="html_d68d7fbaffb84992a5328eba8a23c15e" style="width: 100.0%; height: 100.0%;">         <b>Epplehaus</b><br>         Tübingen, DE<br>         Contact: <br><a href="https://www.epplehaus.de/">web</a> | <a href="https://www.instagram.com/epplehaus/">insta</a></div>`)[0];
+                popup_1cf9371e2f7c29ce00c8699ad57209ce.setContent(html_d68d7fbaffb84992a5328eba8a23c15e);
+            
+        
+
+        marker_143e58a4511006dc61d4e4542f9626d1.bindPopup(popup_1cf9371e2f7c29ce00c8699ad57209ce)
+        ;
+
+        
+    
+    
+                marker_143e58a4511006dc61d4e4542f9626d1.setIcon(icon_b3a4c697484818852440f9e507edeb16);
+            
+    
+            var marker_abf65a6a0075e8feea826df13b82727b = L.marker(
+                [48.9585681, 8.5732358],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_0ae0b8280650900cae5786c0045cfce6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fce1730e108593a6c2d75e9452199b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_760cf11a9076cdb4267465d3ed1af8f0 = $(`<div id="html_760cf11a9076cdb4267465d3ed1af8f0" style="width: 100.0%; height: 100.0%;">         <b>Teestube</b><br>         Singen, DE<br>         Contact: teestube.booking@gmx.de<br><a href="https://www.instagram.com/teestubesingen/">insta</a></div>`)[0];
+                popup_7fce1730e108593a6c2d75e9452199b5.setContent(html_760cf11a9076cdb4267465d3ed1af8f0);
+            
+        
+
+        marker_abf65a6a0075e8feea826df13b82727b.bindPopup(popup_7fce1730e108593a6c2d75e9452199b5)
+        ;
+
+        
+    
+    
+                marker_abf65a6a0075e8feea826df13b82727b.setIcon(icon_0ae0b8280650900cae5786c0045cfce6);
+            
+    
+            var marker_004da8b10fe845fa67f57d789ed66d0d = L.marker(
+                [47.9960901, 7.8494005],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_ad5d544c6e0e73513b51611a11d5f21c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84d8a04a23716a73a141ac7f2935b27a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35dc051a5ddf1a2469227903b64eefc1 = $(`<div id="html_35dc051a5ddf1a2469227903b64eefc1" style="width: 100.0%; height: 100.0%;">         <b>Seafood shows</b><br>         Freiburg im Breisgau, DE<br>         Contact: seafood-shows@riseup.net<br></div>`)[0];
+                popup_84d8a04a23716a73a141ac7f2935b27a.setContent(html_35dc051a5ddf1a2469227903b64eefc1);
+            
+        
+
+        marker_004da8b10fe845fa67f57d789ed66d0d.bindPopup(popup_84d8a04a23716a73a141ac7f2935b27a)
+        ;
+
+        
+    
+    
+                marker_004da8b10fe845fa67f57d789ed66d0d.setIcon(icon_ad5d544c6e0e73513b51611a11d5f21c);
+            
+    
+            var marker_80ea19ac177ebab48f54ad362ee1a921 = L.marker(
+                [47.9960901, 7.8494005],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_3a47d4cd911082fed3122c6c3132be79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48fb4119aee3a3fddc2b014719e84792 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1f71fd5213d96ee04e7588631297aab = $(`<div id="html_e1f71fd5213d96ee04e7588631297aab" style="width: 100.0%; height: 100.0%;">         <b>Schattenparker</b><br>         Freiburg im Breisgau, DE<br>         Contact: Schattenparkers@riseup.net<br></div>`)[0];
+                popup_48fb4119aee3a3fddc2b014719e84792.setContent(html_e1f71fd5213d96ee04e7588631297aab);
+            
+        
+
+        marker_80ea19ac177ebab48f54ad362ee1a921.bindPopup(popup_48fb4119aee3a3fddc2b014719e84792)
+        ;
+
+        
+    
+    
+                marker_80ea19ac177ebab48f54ad362ee1a921.setIcon(icon_3a47d4cd911082fed3122c6c3132be79);
+            
+    
+            var marker_b874eea66e2013c5a079537d518818d2 = L.marker(
+                [48.7784485, 9.1800132],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_3f313cb6711b4113d6e8df5730bb6b32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71334fb6172106897514bf8f04f6a16a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1110011ad7abf3c4b2cef657b606fd1 = $(`<div id="html_c1110011ad7abf3c4b2cef657b606fd1" style="width: 100.0%; height: 100.0%;">         <b>Juha West</b><br>         Stuttgart, DE<br>         Contact: konzerte-west@stjg.de<br><a href="https://jugendhaus-west.de/">web</a> | <a href="https://www.instagram.com/juha_west">insta</a> | <a href="https://www.facebook.com/JuHaWestStuttgart">fb</a></div>`)[0];
+                popup_71334fb6172106897514bf8f04f6a16a.setContent(html_c1110011ad7abf3c4b2cef657b606fd1);
+            
+        
+
+        marker_b874eea66e2013c5a079537d518818d2.bindPopup(popup_71334fb6172106897514bf8f04f6a16a)
+        ;
+
+        
+    
+    
+                marker_b874eea66e2013c5a079537d518818d2.setIcon(icon_3f313cb6711b4113d6e8df5730bb6b32);
+            
+    
+            var marker_eeb0fab7b76061e3e242ace1e6b4511a = L.marker(
+                [49.4892913, 8.4673098],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_18d16eb1f93f9893bb1b20c973e1d159 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50d25942c1be27ab23210cbb48e87f13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7088d7ac0654e38f0aecdf5eaec1bd41 = $(`<div id="html_7088d7ac0654e38f0aecdf5eaec1bd41" style="width: 100.0%; height: 100.0%;">         <b>désordrediy</b><br>         Mannheim, DE<br>         Contact: desordre.booking@gmx.de <br><a href="https://www.instagram.com/desordrediy/">insta</a></div>`)[0];
+                popup_50d25942c1be27ab23210cbb48e87f13.setContent(html_7088d7ac0654e38f0aecdf5eaec1bd41);
+            
+        
+
+        marker_eeb0fab7b76061e3e242ace1e6b4511a.bindPopup(popup_50d25942c1be27ab23210cbb48e87f13)
+        ;
+
+        
+    
+    
+                marker_eeb0fab7b76061e3e242ace1e6b4511a.setIcon(icon_18d16eb1f93f9893bb1b20c973e1d159);
+            
+    
+            var marker_ebc85414e6ab4892256afb0c0e975675 = L.marker(
+                [50.132881, 8.9169797],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_69e46c41ccd11f0635209ae8d325e567 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6edecb4328c0ca514d98cf8e8c19885 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce09aaa5f0b377fd5d8bb896ed4f7707 = $(`<div id="html_ce09aaa5f0b377fd5d8bb896ed4f7707" style="width: 100.0%; height: 100.0%;">         <b>Metzger8</b><br>         Hanau, DE<br>         Contact: metzger@systemli.org<br><a href="https://www.metzger8.de/">web</a> | <a href="https://www.instagram.com/az_metzgerstrasse/">insta</a></div>`)[0];
+                popup_f6edecb4328c0ca514d98cf8e8c19885.setContent(html_ce09aaa5f0b377fd5d8bb896ed4f7707);
+            
+        
+
+        marker_ebc85414e6ab4892256afb0c0e975675.bindPopup(popup_f6edecb4328c0ca514d98cf8e8c19885)
+        ;
+
+        
+    
+    
+                marker_ebc85414e6ab4892256afb0c0e975675.setIcon(icon_69e46c41ccd11f0635209ae8d325e567);
+            
+    
+            var marker_3f1b67da7268a25f0dc44d8e4c757724 = L.marker(
+                [50.1106444, 8.6820917],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_b1f68c587a89ca3da70d756c3f95c572 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f95f5f892e60ffd2e2b94f7b800f5d1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4fb537a40c7bfb7c8dbb2acaf96ebf6 = $(`<div id="html_e4fb537a40c7bfb7c8dbb2acaf96ebf6" style="width: 100.0%; height: 100.0%;">         <b>AU Frankfurt</b><br>         Frankfurt am Main, DE<br>         Contact: konzerte@au-frankfurt.org<br><a href="https://www.au-frankfurt.org/">web</a> | <a href="https://www.instagram.com/au.frankfurt">insta</a></div>`)[0];
+                popup_f95f5f892e60ffd2e2b94f7b800f5d1a.setContent(html_e4fb537a40c7bfb7c8dbb2acaf96ebf6);
+            
+        
+
+        marker_3f1b67da7268a25f0dc44d8e4c757724.bindPopup(popup_f95f5f892e60ffd2e2b94f7b800f5d1a)
+        ;
+
+        
+    
+    
+                marker_3f1b67da7268a25f0dc44d8e4c757724.setIcon(icon_b1f68c587a89ca3da70d756c3f95c572);
+            
+    
+            var marker_c0708df5705112de27f0433e0e03a498 = L.marker(
+                [50.1106444, 8.6820917],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_53f528a06d5f53406ecf2057563890a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33e9b15e2354dd1d5dea076fd3dd062f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e18a9783824755171544fbd599c6649b = $(`<div id="html_e18a9783824755171544fbd599c6649b" style="width: 100.0%; height: 100.0%;">         <b>ichi ichi (Label & Shows)</b><br>         Frankfurt am Main, DE<br>         Contact: <br><a href="https://linktr.ee/ichiichi">web</a> | <a href="https://www.instagram.com/ichiichi_ffm">insta</a></div>`)[0];
+                popup_33e9b15e2354dd1d5dea076fd3dd062f.setContent(html_e18a9783824755171544fbd599c6649b);
+            
+        
+
+        marker_c0708df5705112de27f0433e0e03a498.bindPopup(popup_33e9b15e2354dd1d5dea076fd3dd062f)
+        ;
+
+        
+    
+    
+                marker_c0708df5705112de27f0433e0e03a498.setIcon(icon_53f528a06d5f53406ecf2057563890a0);
+            
+    
+            var marker_19b2611edfb74fbf735c011e738d215c = L.marker(
+                [50.1106444, 8.6820917],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_3a2c045221694d520f7a08687668ba41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fab5e63ab1db229b20e81800884d9532 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69fcb5c9b7dc13dbf630680d19fd1f79 = $(`<div id="html_69fcb5c9b7dc13dbf630680d19fd1f79" style="width: 100.0%; height: 100.0%;">         <b>Kids in the Backyard</b><br>         Frankfurt am Main, DE<br>         Contact: <br><a href="https://www.instagram.com/kidsinthebackyardshows">insta</a></div>`)[0];
+                popup_fab5e63ab1db229b20e81800884d9532.setContent(html_69fcb5c9b7dc13dbf630680d19fd1f79);
+            
+        
+
+        marker_19b2611edfb74fbf735c011e738d215c.bindPopup(popup_fab5e63ab1db229b20e81800884d9532)
+        ;
+
+        
+    
+    
+                marker_19b2611edfb74fbf735c011e738d215c.setIcon(icon_3a2c045221694d520f7a08687668ba41);
+            
+    
+            var marker_c6089f284ae9d06f28ceb76a36824ce7 = L.marker(
+                [50.1106444, 8.6820917],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_6e93b63942aaa089ba2a5ba5a747fb1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a7b72b073e8f8dae2d150a3c929a9b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee66b1ec335de12de895360fe5cfb27d = $(`<div id="html_ee66b1ec335de12de895360fe5cfb27d" style="width: 100.0%; height: 100.0%;">         <b>Flaked Shows</b><br>         Frankfurt am Main, DE<br>         Contact: <br><a href="https://www.instagram.com/flakedxshows/">insta</a></div>`)[0];
+                popup_2a7b72b073e8f8dae2d150a3c929a9b8.setContent(html_ee66b1ec335de12de895360fe5cfb27d);
+            
+        
+
+        marker_c6089f284ae9d06f28ceb76a36824ce7.bindPopup(popup_2a7b72b073e8f8dae2d150a3c929a9b8)
+        ;
+
+        
+    
+    
+                marker_c6089f284ae9d06f28ceb76a36824ce7.setIcon(icon_6e93b63942aaa089ba2a5ba5a747fb1e);
+            
+    
+            var marker_12742eba6d3e1a4709e3e0fa47aeacc3 = L.marker(
+                [50.1106444, 8.6820917],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_183a0cf0e3174f62276a7be114908622 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c4437f186b310ce3110e69b1456a4a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1915c359a2516248804d9b2b59313a9 = $(`<div id="html_c1915c359a2516248804d9b2b59313a9" style="width: 100.0%; height: 100.0%;">         <b>Chaos Cats Concerts</b><br>         Frankfurt am Main, DE<br>         Contact: chaoscatsconcerts@riseup.net<br><a href="https://www.instagram.com/chaoscatsconcertsffm">insta</a> | <a href="https://www.facebook.com/p/Chaos-Cats-Concerts-100087508325145/">fb</a></div>`)[0];
+                popup_2c4437f186b310ce3110e69b1456a4a7.setContent(html_c1915c359a2516248804d9b2b59313a9);
+            
+        
+
+        marker_12742eba6d3e1a4709e3e0fa47aeacc3.bindPopup(popup_2c4437f186b310ce3110e69b1456a4a7)
+        ;
+
+        
+    
+    
+                marker_12742eba6d3e1a4709e3e0fa47aeacc3.setIcon(icon_183a0cf0e3174f62276a7be114908622);
+            
+    
+            var marker_23c574e306295f393f2f56ffbdc6ec51 = L.marker(
+                [49.872775, 8.651177],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_230529eb80764768c7c3aaf55501c0c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_962f35195d28df1c7d330adf5940d290 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5271d8b3c28366d59dad944cf7c86d8 = $(`<div id="html_e5271d8b3c28366d59dad944cf7c86d8" style="width: 100.0%; height: 100.0%;">         <b>Oetinger Villa</b><br>         Darmstadt, DE<br>         Contact: <br><a href="https://oetingervilla.de/">web</a> | <a href="https://www.instagram.com/oetingervilla/">insta</a></div>`)[0];
+                popup_962f35195d28df1c7d330adf5940d290.setContent(html_e5271d8b3c28366d59dad944cf7c86d8);
+            
+        
+
+        marker_23c574e306295f393f2f56ffbdc6ec51.bindPopup(popup_962f35195d28df1c7d330adf5940d290)
+        ;
+
+        
+    
+    
+                marker_23c574e306295f393f2f56ffbdc6ec51.setIcon(icon_230529eb80764768c7c3aaf55501c0c3);
+            
+    
+            var marker_7c069525655e2d35cf2127e9af593c30 = L.marker(
+                [49.872775, 8.651177],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_2290de8f8ffccf1d4d9db754c87a1b4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d76de7f407f7c612ee546fc10212568a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_100cc66df2e30484fe5499cfc422f0c8 = $(`<div id="html_100cc66df2e30484fe5499cfc422f0c8" style="width: 100.0%; height: 100.0%;">         <b>Angeschimmelt Youth Crew</b><br>         Darmstadt, DE<br>         Contact: <br><a href="https://linktr.ee/aycshows">web</a> | <a href="https://www.instagram.com/angeschimmeltyouthcrew/">insta</a></div>`)[0];
+                popup_d76de7f407f7c612ee546fc10212568a.setContent(html_100cc66df2e30484fe5499cfc422f0c8);
+            
+        
+
+        marker_7c069525655e2d35cf2127e9af593c30.bindPopup(popup_d76de7f407f7c612ee546fc10212568a)
+        ;
+
+        
+    
+    
+                marker_7c069525655e2d35cf2127e9af593c30.setIcon(icon_2290de8f8ffccf1d4d9db754c87a1b4e);
+            
+    
+            var marker_d9e31f029be6a357c26e5569caac7e83 = L.marker(
+                [49.872775, 8.651177],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_01e48ad000a9f7e0dadd8476b608416a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5861cc374d0197590ce0c572e8a34ffb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09c7828ed931ba5051248ea8c74bff8b = $(`<div id="html_09c7828ed931ba5051248ea8c74bff8b" style="width: 100.0%; height: 100.0%;">         <b>Raccoon Konzerte Darmstadt</b><br>         Darmstadt, DE<br>         Contact: <br><a href="https://www.instagram.com/raccoons.darmstadt/">insta</a></div>`)[0];
+                popup_5861cc374d0197590ce0c572e8a34ffb.setContent(html_09c7828ed931ba5051248ea8c74bff8b);
+            
+        
+
+        marker_d9e31f029be6a357c26e5569caac7e83.bindPopup(popup_5861cc374d0197590ce0c572e8a34ffb)
+        ;
+
+        
+    
+    
+                marker_d9e31f029be6a357c26e5569caac7e83.setIcon(icon_01e48ad000a9f7e0dadd8476b608416a);
+            
+    
+            var marker_12252fd029419c05ea6e6c5171de0769 = L.marker(
+                [50.5808795, 8.6938161],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_3464115f4e10720597d6837ff01f15d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8172e9f65241dae075b0558d7377495 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d1a881128df6cfc2bd569007f488f28 = $(`<div id="html_1d1a881128df6cfc2bd569007f488f28" style="width: 100.0%; height: 100.0%;">         <b>AK44 Gießen</b><br>         Gießen, DE<br>         Contact: <br><a href="https://ak44-giessen.de/ak44-infoladen-giessen/kontakt/">web</a> | <a href="https://www.instagram.com/ak44_gieszen">insta</a></div>`)[0];
+                popup_c8172e9f65241dae075b0558d7377495.setContent(html_1d1a881128df6cfc2bd569007f488f28);
+            
+        
+
+        marker_12252fd029419c05ea6e6c5171de0769.bindPopup(popup_c8172e9f65241dae075b0558d7377495)
+        ;
+
+        
+    
+    
+                marker_12252fd029419c05ea6e6c5171de0769.setIcon(icon_3464115f4e10720597d6837ff01f15d1);
+            
+    
+            var marker_98b79cad50dad2d61fc5aead7ad11646 = L.marker(
+                [49.9995205, 8.2736253],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_33a96b35e20ddbb980557ea48685c5d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6765f27ff28cf19c9e215358d5693261 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2936781ab2238f6e0b99d8d1193767f5 = $(`<div id="html_2936781ab2238f6e0b99d8d1193767f5" style="width: 100.0%; height: 100.0%;">         <b>Haus Mainusch</b><br>         Mainz, DE<br>         Contact: <br><a href="https://haus-mainusch.de/">web</a> | <a href="https://www.instagram.com/hausmainusch/">insta</a></div>`)[0];
+                popup_6765f27ff28cf19c9e215358d5693261.setContent(html_2936781ab2238f6e0b99d8d1193767f5);
+            
+        
+
+        marker_98b79cad50dad2d61fc5aead7ad11646.bindPopup(popup_6765f27ff28cf19c9e215358d5693261)
+        ;
+
+        
+    
+    
+                marker_98b79cad50dad2d61fc5aead7ad11646.setIcon(icon_33a96b35e20ddbb980557ea48685c5d9);
+            
+    
+            var marker_3e216fa02896cc167d148df36665f472 = L.marker(
+                [50.8090106, 8.7704695],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_b6cb3d8079606d9dd3688b15545360d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_378ceeadf82c7c8d37a952b651c05525 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_981dc2ade044a19fed32d3a16292c5f4 = $(`<div id="html_981dc2ade044a19fed32d3a16292c5f4" style="width: 100.0%; height: 100.0%;">         <b>Team Tinnitus</b><br>         Marburg, DE<br>         Contact: <br><a href="https://www.instagram.com/teamtinnitus_marburg/">insta</a></div>`)[0];
+                popup_378ceeadf82c7c8d37a952b651c05525.setContent(html_981dc2ade044a19fed32d3a16292c5f4);
+            
+        
+
+        marker_3e216fa02896cc167d148df36665f472.bindPopup(popup_378ceeadf82c7c8d37a952b651c05525)
+        ;
+
+        
+    
+    
+                marker_3e216fa02896cc167d148df36665f472.setIcon(icon_b6cb3d8079606d9dd3688b15545360d2);
+            
+    
+            var marker_eda11b1c4096542c4a776ebff4b7ac7e = L.marker(
+                [50.776351, 6.083862],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_81aeed0a3977d32ea7cfe5ea0e44ea36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b85f3d48f60c1357aa7b62b4be358830 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c31e149b5598218825a1f0208b3c7f1 = $(`<div id="html_4c31e149b5598218825a1f0208b3c7f1" style="width: 100.0%; height: 100.0%;">         <b>AZ Aachen</b><br>         Aachen, DE<br>         Contact: booking@az-aachen.de<br><a href="https://az-aachen.de">web</a></div>`)[0];
+                popup_b85f3d48f60c1357aa7b62b4be358830.setContent(html_4c31e149b5598218825a1f0208b3c7f1);
+            
+        
+
+        marker_eda11b1c4096542c4a776ebff4b7ac7e.bindPopup(popup_b85f3d48f60c1357aa7b62b4be358830)
+        ;
+
+        
+    
+    
+                marker_eda11b1c4096542c4a776ebff4b7ac7e.setIcon(icon_81aeed0a3977d32ea7cfe5ea0e44ea36);
+            
+    
+            var marker_f5fd5a21e07ab11b6eff88100375cf4a = L.marker(
+                [49.7596208, 6.6441878],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_f097bf47fe63b33dcccc1012474e2676 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d05612eb5d4f1a607de40aa8283e4c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_919f9021c36d0107b160716562b1ed53 = $(`<div id="html_919f9021c36d0107b160716562b1ed53" style="width: 100.0%; height: 100.0%;">         <b>Viel Lärm um nichts Shows</b><br>         Trier, DE<br>         Contact: booking@viellaermumnix.de<br><a href="https://viellaermumnix.de/">web</a> | <a href="https://www.facebook.com/VielLaermUmNix/">fb</a></div>`)[0];
+                popup_6d05612eb5d4f1a607de40aa8283e4c7.setContent(html_919f9021c36d0107b160716562b1ed53);
+            
+        
+
+        marker_f5fd5a21e07ab11b6eff88100375cf4a.bindPopup(popup_6d05612eb5d4f1a607de40aa8283e4c7)
+        ;
+
+        
+    
+    
+                marker_f5fd5a21e07ab11b6eff88100375cf4a.setIcon(icon_f097bf47fe63b33dcccc1012474e2676);
+            
+    
+            var marker_9d368b5d50b8b3a20fc230b9ea7f1d65 = L.marker(
+                [52.1152245, 8.6711118],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_7ebe17f87b8b69e9fc9a3ad86d6ad552 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d611a2e67083049a985d1e931cfd7429 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e76b275658f462d2600df7dcae986040 = $(`<div id="html_e76b275658f462d2600df7dcae986040" style="width: 100.0%; height: 100.0%;">         <b>Flacorebooking</b><br>         Herford, DE<br>         Contact: flacorebooking@gmail.com<br><a href="https://www.instagram.com/flacorebooking/">insta</a> | <a href="https://www.facebook.com/people/Flacorebooking/100093977076302/">fb</a></div>`)[0];
+                popup_d611a2e67083049a985d1e931cfd7429.setContent(html_e76b275658f462d2600df7dcae986040);
+            
+        
+
+        marker_9d368b5d50b8b3a20fc230b9ea7f1d65.bindPopup(popup_d611a2e67083049a985d1e931cfd7429)
+        ;
+
+        
+    
+    
+                marker_9d368b5d50b8b3a20fc230b9ea7f1d65.setIcon(icon_7ebe17f87b8b69e9fc9a3ad86d6ad552);
+            
+    
+            var marker_f341d7a8fd984e80c53393bb0b359329 = L.marker(
+                [52.1152245, 8.6711118],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_c3499d5e295d8cd28724b2cfd5df6571 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ec47cfaff9c0c383be1a14eafdc009f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c1dcf4c07efac13d192f5d90b244c77 = $(`<div id="html_2c1dcf4c07efac13d192f5d90b244c77" style="width: 100.0%; height: 100.0%;">         <b>Flachmannbooking</b><br>         Herford, DE<br>         Contact: <br><a href="https://www.instagram.com/flachmannbooking">insta</a></div>`)[0];
+                popup_0ec47cfaff9c0c383be1a14eafdc009f.setContent(html_2c1dcf4c07efac13d192f5d90b244c77);
+            
+        
+
+        marker_f341d7a8fd984e80c53393bb0b359329.bindPopup(popup_0ec47cfaff9c0c383be1a14eafdc009f)
+        ;
+
+        
+    
+    
+                marker_f341d7a8fd984e80c53393bb0b359329.setIcon(icon_c3499d5e295d8cd28724b2cfd5df6571);
+            
+    
+            var marker_a048d7327638848941b3d180b111a518 = L.marker(
+                [52.1152245, 8.6711118],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_88de70764980e755faf17c24818eab79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42390fc94e54e1cf3ccfc4fb45b7ac7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3802845f4935ba6a81ddf7c2f0dcfa1 = $(`<div id="html_c3802845f4935ba6a81ddf7c2f0dcfa1" style="width: 100.0%; height: 100.0%;">         <b>Fla Fla</b><br>         Herford, DE<br>         Contact: <br><a href="https://www.instagram.com/sz_flafla">insta</a></div>`)[0];
+                popup_42390fc94e54e1cf3ccfc4fb45b7ac7f.setContent(html_c3802845f4935ba6a81ddf7c2f0dcfa1);
+            
+        
+
+        marker_a048d7327638848941b3d180b111a518.bindPopup(popup_42390fc94e54e1cf3ccfc4fb45b7ac7f)
+        ;
+
+        
+    
+    
+                marker_a048d7327638848941b3d180b111a518.setIcon(icon_88de70764980e755faf17c24818eab79);
+            
+    
+            var marker_59a7213e08ffb5887cf9ba4ff40c508d = L.marker(
+                [50.938361, 6.959974],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_f468c3cf3b9e4e431496a0ab499276dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1afe8e4a4985bbf03f6959a777fb4492 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c35afd77410fd98e43990e76c50c35ed = $(`<div id="html_c35afd77410fd98e43990e76c50c35ed" style="width: 100.0%; height: 100.0%;">         <b>Gute Konzerte Shows</b><br>         Köln, DE<br>         Contact: gutekonzerteshows@gmail.com<br><a href="https://www.instagram.com/gutekonzerteshows/">insta</a></div>`)[0];
+                popup_1afe8e4a4985bbf03f6959a777fb4492.setContent(html_c35afd77410fd98e43990e76c50c35ed);
+            
+        
+
+        marker_59a7213e08ffb5887cf9ba4ff40c508d.bindPopup(popup_1afe8e4a4985bbf03f6959a777fb4492)
+        ;
+
+        
+    
+    
+                marker_59a7213e08ffb5887cf9ba4ff40c508d.setIcon(icon_f468c3cf3b9e4e431496a0ab499276dc);
+            
+    
+            var marker_0edc576117afa525413eea125a65c415 = L.marker(
+                [51.5142273, 7.4652789],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_436383a7fbd5ede90822359312f67589 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a900a4e843a5a05d9b3c6cfbfe124ee7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_645dda6caac0986318013695df3d2ccc = $(`<div id="html_645dda6caac0986318013695df3d2ccc" style="width: 100.0%; height: 100.0%;">         <b>Fiducia Shows</b><br>         Dortmund, DE<br>         Contact: <br><a href="https://www.instagram.com/fiducia_shows/?hl=de">insta</a></div>`)[0];
+                popup_a900a4e843a5a05d9b3c6cfbfe124ee7.setContent(html_645dda6caac0986318013695df3d2ccc);
+            
+        
+
+        marker_0edc576117afa525413eea125a65c415.bindPopup(popup_a900a4e843a5a05d9b3c6cfbfe124ee7)
+        ;
+
+        
+    
+    
+                marker_0edc576117afa525413eea125a65c415.setIcon(icon_436383a7fbd5ede90822359312f67589);
+            
+    
+            var marker_22692e449c022d6724fe256d364d030d = L.marker(
+                [49.1982825, 8.1123441],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_ece908ffa6139b46e1c864d30f095e58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bcb559b645800268a045aa89aa3f0be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0330a9a9574206958b1b6b8a03850bf6 = $(`<div id="html_0330a9a9574206958b1b6b8a03850bf6" style="width: 100.0%; height: 100.0%;">         <b>Ruhegestört</b><br>         Landau in der Pfalz, DE<br>         Contact: booking@ruhegestoert-diy.de<br><a href="https://wonderl.ink/@ruhegestoert">web</a> | <a href="https://www.instagram.com/ruhegestoert.diy/">insta</a></div>`)[0];
+                popup_0bcb559b645800268a045aa89aa3f0be.setContent(html_0330a9a9574206958b1b6b8a03850bf6);
+            
+        
+
+        marker_22692e449c022d6724fe256d364d030d.bindPopup(popup_0bcb559b645800268a045aa89aa3f0be)
+        ;
+
+        
+    
+    
+                marker_22692e449c022d6724fe256d364d030d.setIcon(icon_ece908ffa6139b46e1c864d30f095e58);
+            
+    
+            var marker_406faedc8a7817ce5e3cf00c2dc76cf6 = L.marker(
+                [51.4582235, 7.0158171],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_45dec648e338b0c52000ec40d79a2fac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a466b47dce37eca80e6f058844d07402 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6241e527cd0f9962012856bd819b80b5 = $(`<div id="html_6241e527cd0f9962012856bd819b80b5" style="width: 100.0%; height: 100.0%;">         <b>Emokellerbookings</b><br>         Essen, DE<br>         Contact: <br><a href="https://www.instagram.com/emokellerbooking">insta</a></div>`)[0];
+                popup_a466b47dce37eca80e6f058844d07402.setContent(html_6241e527cd0f9962012856bd819b80b5);
+            
+        
+
+        marker_406faedc8a7817ce5e3cf00c2dc76cf6.bindPopup(popup_a466b47dce37eca80e6f058844d07402)
+        ;
+
+        
+    
+    
+                marker_406faedc8a7817ce5e3cf00c2dc76cf6.setIcon(icon_45dec648e338b0c52000ec40d79a2fac);
+            
+    
+            var marker_d49eaa49389d533ec027bcf946dd6d28 = L.marker(
+                [51.4582235, 7.0158171],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_87757f19589a74a40213d5679d413dd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_672d96fb13500a496b2d5fac89687727 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ace40a607b1796a9cdfc38ac7e4eff0b = $(`<div id="html_ace40a607b1796a9cdfc38ac7e4eff0b" style="width: 100.0%; height: 100.0%;">         <b>Dont Panic</b><br>         Essen, DE<br>         Contact: <br><a href="http://www.dontpanicessen.de/">web</a> | <a href="https://www.instagram.com/dontpanicessen">insta</a></div>`)[0];
+                popup_672d96fb13500a496b2d5fac89687727.setContent(html_ace40a607b1796a9cdfc38ac7e4eff0b);
+            
+        
+
+        marker_d49eaa49389d533ec027bcf946dd6d28.bindPopup(popup_672d96fb13500a496b2d5fac89687727)
+        ;
+
+        
+    
+    
+                marker_d49eaa49389d533ec027bcf946dd6d28.setIcon(icon_87757f19589a74a40213d5679d413dd7);
+            
+    
+            var marker_55552b9fa4e46aee9137e41e67e61887 = L.marker(
+                [50.7352621, 7.1024635],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_2754d16ca12655c14290e035e9a9ecef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e2a32bfa0b0f592162a5ca2996bde42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a746eef8b99a861c26fa19ae861bd5dd = $(`<div id="html_a746eef8b99a861c26fa19ae861bd5dd" style="width: 100.0%; height: 100.0%;">         <b>Urinstein Kollektiv</b><br>         Bonn, DE<br>         Contact: <br><a href="https://www.instagram.com/urinstein.kollektiv/">insta</a></div>`)[0];
+                popup_6e2a32bfa0b0f592162a5ca2996bde42.setContent(html_a746eef8b99a861c26fa19ae861bd5dd);
+            
+        
+
+        marker_55552b9fa4e46aee9137e41e67e61887.bindPopup(popup_6e2a32bfa0b0f592162a5ca2996bde42)
+        ;
+
+        
+    
+    
+                marker_55552b9fa4e46aee9137e41e67e61887.setIcon(icon_2754d16ca12655c14290e035e9a9ecef);
+            
+    
+            var marker_145d61a74c77cfab19184e977b0854fd = L.marker(
+                [52.3744779, 9.7385532],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_f4252165c559395ac85c3e24c29da92e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba615aaac96c1bebd9bd106e2b201b17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1daef82f790f6fd7d4acd08ae44a39bc = $(`<div id="html_1daef82f790f6fd7d4acd08ae44a39bc" style="width: 100.0%; height: 100.0%;">         <b>Stumpf</b><br>         Hannover, DE<br>         Contact: stumpfpunk@riseup.net<br><a href="https://stumpfpunx.de/">web</a> | <a href="https://www.instagram.com/stumpfpunx/">insta</a></div>`)[0];
+                popup_ba615aaac96c1bebd9bd106e2b201b17.setContent(html_1daef82f790f6fd7d4acd08ae44a39bc);
+            
+        
+
+        marker_145d61a74c77cfab19184e977b0854fd.bindPopup(popup_ba615aaac96c1bebd9bd106e2b201b17)
+        ;
+
+        
+    
+    
+                marker_145d61a74c77cfab19184e977b0854fd.setIcon(icon_f4252165c559395ac85c3e24c29da92e);
+            
+    
+            var marker_1fdf83baaee07cf45bc7c67516e3c8b8 = L.marker(
+                [53.1187799, 9.7873454],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_e32bff135a96f21e45693c5df0860e4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19b1f232bd496733cc0159bb7de729d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ab56df250f401f7414492a101a7541a = $(`<div id="html_3ab56df250f401f7414492a101a7541a" style="width: 100.0%; height: 100.0%;">         <b>Zbb Konzerte</b><br>         Schneverdingen, DE<br>         Contact: <br><a href="https://www.instagram.com/zack_bumm_bonjour_/">insta</a></div>`)[0];
+                popup_19b1f232bd496733cc0159bb7de729d7.setContent(html_3ab56df250f401f7414492a101a7541a);
+            
+        
+
+        marker_1fdf83baaee07cf45bc7c67516e3c8b8.bindPopup(popup_19b1f232bd496733cc0159bb7de729d7)
+        ;
+
+        
+    
+    
+                marker_1fdf83baaee07cf45bc7c67516e3c8b8.setIcon(icon_e32bff135a96f21e45693c5df0860e4d);
+            
+    
+            var marker_f13f483d761d573d3831757b6ac53526 = L.marker(
+                [53.550341, 10.000654],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_230d3d4a288609bebc14c31a452585cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c41591af828182a981dcb8f5ad2ec5d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e97f662e498f1373106f6248354d12a = $(`<div id="html_8e97f662e498f1373106f6248354d12a" style="width: 100.0%; height: 100.0%;">         <b>friesenterz</b><br>         Hamburg, DE<br>         Contact: <br><a href="https://www.instagram.com/friesenterz/">insta</a></div>`)[0];
+                popup_c41591af828182a981dcb8f5ad2ec5d2.setContent(html_8e97f662e498f1373106f6248354d12a);
+            
+        
+
+        marker_f13f483d761d573d3831757b6ac53526.bindPopup(popup_c41591af828182a981dcb8f5ad2ec5d2)
+        ;
+
+        
+    
+    
+                marker_f13f483d761d573d3831757b6ac53526.setIcon(icon_230d3d4a288609bebc14c31a452585cb);
+            
+    
+            var marker_c012b39bc478b9203d512228366446ae = L.marker(
+                [53.550341, 10.000654],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_ca14ae09f8b120084d5efa2027cdd94d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_799a309d27929d3536ffcb93956d0d55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13b8a1a8821c236292a122988769db28 = $(`<div id="html_13b8a1a8821c236292a122988769db28" style="width: 100.0%; height: 100.0%;">         <b>Geisterstadt Musik</b><br>         Hamburg, DE<br>         Contact: geisterstadtmusik@riseup.net<br><a href="https://facebook.com/geisterstadtmusik/">fb</a></div>`)[0];
+                popup_799a309d27929d3536ffcb93956d0d55.setContent(html_13b8a1a8821c236292a122988769db28);
+            
+        
+
+        marker_c012b39bc478b9203d512228366446ae.bindPopup(popup_799a309d27929d3536ffcb93956d0d55)
+        ;
+
+        
+    
+    
+                marker_c012b39bc478b9203d512228366446ae.setIcon(icon_ca14ae09f8b120084d5efa2027cdd94d);
+            
+    
+            var marker_be337304ff62110ace04f6576942ce22 = L.marker(
+                [53.550341, 10.000654],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_d4e41276d1b4b8ec2b22e44e8ecb1d8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b0725ab256b437f5b685fe59e949cfd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c13c201a01d8bc2ab4ffbab5c32ab664 = $(`<div id="html_c13c201a01d8bc2ab4ffbab5c32ab664" style="width: 100.0%; height: 100.0%;">         <b>Night Owl Nights</b><br>         Hamburg, DE<br>         Contact: <br><a href="https://www.instagram.com/nightowlnights/">insta</a> | <a href="https://www.facebook.com/NightOwlNights">fb</a></div>`)[0];
+                popup_9b0725ab256b437f5b685fe59e949cfd.setContent(html_c13c201a01d8bc2ab4ffbab5c32ab664);
+            
+        
+
+        marker_be337304ff62110ace04f6576942ce22.bindPopup(popup_9b0725ab256b437f5b685fe59e949cfd)
+        ;
+
+        
+    
+    
+                marker_be337304ff62110ace04f6576942ce22.setIcon(icon_d4e41276d1b4b8ec2b22e44e8ecb1d8a);
+            
+    
+            var marker_362e990703e39b5852580d4bd30729c3 = L.marker(
+                [53.550341, 10.000654],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_64aae9aedcf2b19d796c0e7f1eae063d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d42989132469b11c7864ceb5b6dd7139 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2430b76a06318db3319a42739c9f86f = $(`<div id="html_c2430b76a06318db3319a42739c9f86f" style="width: 100.0%; height: 100.0%;">         <b>Feiste Shows</b><br>         Hamburg, DE<br>         Contact: <br><a href="https://www.instagram.com/feisteshows/">insta</a> | <a href="https://www.facebook.com/feisteshows">fb</a></div>`)[0];
+                popup_d42989132469b11c7864ceb5b6dd7139.setContent(html_c2430b76a06318db3319a42739c9f86f);
+            
+        
+
+        marker_362e990703e39b5852580d4bd30729c3.bindPopup(popup_d42989132469b11c7864ceb5b6dd7139)
+        ;
+
+        
+    
+    
+                marker_362e990703e39b5852580d4bd30729c3.setIcon(icon_64aae9aedcf2b19d796c0e7f1eae063d);
+            
+    
+            var marker_44acb1f1e4d38e584f0e97a05a840613 = L.marker(
+                [52.5431104, 11.9722524],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_0a8ac597910f82974c9cdf065b7bf703 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec8c6e6b9ee1ae6131057c6fcedd2671 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79f3052d011554cf0e50e022f034c09d = $(`<div id="html_79f3052d011554cf0e50e022f034c09d" style="width: 100.0%; height: 100.0%;">         <b>Kaminstube Tangermünde</b><br>         Tangermünde, DE<br>         Contact: <br><a href="https://www.instagram.com/kaminstube_tangermuende">insta</a></div>`)[0];
+                popup_ec8c6e6b9ee1ae6131057c6fcedd2671.setContent(html_79f3052d011554cf0e50e022f034c09d);
+            
+        
+
+        marker_44acb1f1e4d38e584f0e97a05a840613.bindPopup(popup_ec8c6e6b9ee1ae6131057c6fcedd2671)
+        ;
+
+        
+    
+    
+                marker_44acb1f1e4d38e584f0e97a05a840613.setIcon(icon_0a8ac597910f82974c9cdf065b7bf703);
+            
+    
+            var marker_3be861c97a80d71441d554df4de63c30 = L.marker(
+                [51.0493286, 13.7381437],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_5bad756b88f19bd897756b7dd31c5c35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_032e40bd41d4e553a6b50e1da85be4f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55c41b95f7b1b6183e0576da6e01c666 = $(`<div id="html_55c41b95f7b1b6183e0576da6e01c666" style="width: 100.0%; height: 100.0%;">         <b>Super Jetski Entertainment Shows</b><br>         Dresden, DE<br>         Contact: <br><a href="https://www.instagram.com/super.jetski/">insta</a></div>`)[0];
+                popup_032e40bd41d4e553a6b50e1da85be4f4.setContent(html_55c41b95f7b1b6183e0576da6e01c666);
+            
+        
+
+        marker_3be861c97a80d71441d554df4de63c30.bindPopup(popup_032e40bd41d4e553a6b50e1da85be4f4)
+        ;
+
+        
+    
+    
+                marker_3be861c97a80d71441d554df4de63c30.setIcon(icon_5bad756b88f19bd897756b7dd31c5c35);
+            
+    
+            var marker_af99ae9a2eaf2e99514a795167ba73b2 = L.marker(
+                [51.9913559, 9.5634922],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_f4f90293aabed14d1f466b1f9add7b95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb781dd83234e0fa3c04b6e30c4d3404 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1c02eeedf30c0de8e8ca4400f0308f4 = $(`<div id="html_c1c02eeedf30c0de8e8ca4400f0308f4" style="width: 100.0%; height: 100.0%;">         <b>One Tooth Mouth Shows</b><br>         Halle, DE<br>         Contact: <br><a href="https://www.instagram.com/onetoothmouthshows">insta</a></div>`)[0];
+                popup_fb781dd83234e0fa3c04b6e30c4d3404.setContent(html_c1c02eeedf30c0de8e8ca4400f0308f4);
+            
+        
+
+        marker_af99ae9a2eaf2e99514a795167ba73b2.bindPopup(popup_fb781dd83234e0fa3c04b6e30c4d3404)
+        ;
+
+        
+    
+    
+                marker_af99ae9a2eaf2e99514a795167ba73b2.setIcon(icon_f4f90293aabed14d1f466b1f9add7b95);
+            
+    
+            var marker_b91367a44c59f56ef76e35bdc9a25343 = L.marker(
+                [50.8323531, 12.918914],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_bb7882273995427da0e9b745ac68e07b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c5f61b7ab7beade10821d99485645ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_736e31ef30f6660bdd46dedf197b8ce2 = $(`<div id="html_736e31ef30f6660bdd46dedf197b8ce2" style="width: 100.0%; height: 100.0%;">         <b>AJZ Talschock</b><br>         Chemnitz, DE<br>         Contact: <br><a href="https://www.instagram.com/ajz_talschock">insta</a></div>`)[0];
+                popup_7c5f61b7ab7beade10821d99485645ae.setContent(html_736e31ef30f6660bdd46dedf197b8ce2);
+            
+        
+
+        marker_b91367a44c59f56ef76e35bdc9a25343.bindPopup(popup_7c5f61b7ab7beade10821d99485645ae)
+        ;
+
+        
+    
+    
+                marker_b91367a44c59f56ef76e35bdc9a25343.setIcon(icon_bb7882273995427da0e9b745ac68e07b);
+            
+    
+            var marker_88726959b0bdf5b3ffe4582856038097 = L.marker(
+                [50.8765528, 12.0832674],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_82f1736c88ae4ca43d0ea13e5fe867f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7da8025dec7d4aeba0996784bed469e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_142a93747f3997d98df20eaf9f2d6915 = $(`<div id="html_142a93747f3997d98df20eaf9f2d6915" style="width: 100.0%; height: 100.0%;">         <b>Burn Burn Booking</b><br>         Gera, DE<br>         Contact: <br><a href="https://www.instagram.com/burnburnxbooking">insta</a></div>`)[0];
+                popup_7da8025dec7d4aeba0996784bed469e5.setContent(html_142a93747f3997d98df20eaf9f2d6915);
+            
+        
+
+        marker_88726959b0bdf5b3ffe4582856038097.bindPopup(popup_7da8025dec7d4aeba0996784bed469e5)
+        ;
+
+        
+    
+    
+                marker_88726959b0bdf5b3ffe4582856038097.setIcon(icon_82f1736c88ae4ca43d0ea13e5fe867f6);
+            
+    
+            var marker_71ab945d2db1ee010c20e32e528337a5 = L.marker(
+                [50.9793301, 11.3297921],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_3fd8985316c264532421f4a7a3645092 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4866c95791cd0ecbbc2fb755638a8b5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e577e84fd56628e5c54bda9153c3b028 = $(`<div id="html_e577e84fd56628e5c54bda9153c3b028" style="width: 100.0%; height: 100.0%;">         <b>Endurance To Hell</b><br>         Weimar, DE<br>         Contact: atmofear@gmx.de<br><a href="https://www.instagram.com/ethbooking/">insta</a> | <a href="https://www.facebook.com/eth423">fb</a></div>`)[0];
+                popup_4866c95791cd0ecbbc2fb755638a8b5f.setContent(html_e577e84fd56628e5c54bda9153c3b028);
+            
+        
+
+        marker_71ab945d2db1ee010c20e32e528337a5.bindPopup(popup_4866c95791cd0ecbbc2fb755638a8b5f)
+        ;
+
+        
+    
+    
+                marker_71ab945d2db1ee010c20e32e528337a5.setIcon(icon_3fd8985316c264532421f4a7a3645092);
+            
+    
+            var marker_000122a7afc292e8e5401fd860d5fed3 = L.marker(
+                [50.8960964, 14.8064807],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_31fda708cbbba6f998e680cb08536c7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e91a5895ffaeb71bb8f91e36912012c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1959d8804b599f37f2325ce5c0f1731 = $(`<div id="html_a1959d8804b599f37f2325ce5c0f1731" style="width: 100.0%; height: 100.0%;">         <b>Emil e.V.</b><br>         Zittau, DE<br>         Contact: <br><a href="https://wonderl.ink/@emil">web</a> | <a href="https://www.instagram.com/emil_zittau">insta</a></div>`)[0];
+                popup_3e91a5895ffaeb71bb8f91e36912012c.setContent(html_a1959d8804b599f37f2325ce5c0f1731);
+            
+        
+
+        marker_000122a7afc292e8e5401fd860d5fed3.bindPopup(popup_3e91a5895ffaeb71bb8f91e36912012c)
+        ;
+
+        
+    
+    
+                marker_000122a7afc292e8e5401fd860d5fed3.setIcon(icon_31fda708cbbba6f998e680cb08536c7e);
+            
+    
+            var marker_b505f6471fdf36f767e81693adc55803 = L.marker(
+                [52.5173885, 13.3951309],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_5019ae53048be2e281319cdf15ad000c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a71fcecebca244a77f64039fc706757 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87a58fc3ba666d143ebfe42163c1dc51 = $(`<div id="html_87a58fc3ba666d143ebfe42163c1dc51" style="width: 100.0%; height: 100.0%;">         <b>Sand in der Maschine</b><br>         Berlin, DE<br>         Contact: <br><a href="https://www.instagram.com/sand_in_der_maschine/">insta</a></div>`)[0];
+                popup_4a71fcecebca244a77f64039fc706757.setContent(html_87a58fc3ba666d143ebfe42163c1dc51);
+            
+        
+
+        marker_b505f6471fdf36f767e81693adc55803.bindPopup(popup_4a71fcecebca244a77f64039fc706757)
+        ;
+
+        
+    
+    
+                marker_b505f6471fdf36f767e81693adc55803.setIcon(icon_5019ae53048be2e281319cdf15ad000c);
+            
+    
+            var marker_339287bf6dae547a5924bc41d5bdc38b = L.marker(
+                [52.5173885, 13.3951309],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_d733279b8d53a709597b16d86eff9c25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19122c003aea542844629c068c14e85d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6eaa9cf71c1b0983049e11b0238ea6d1 = $(`<div id="html_6eaa9cf71c1b0983049e11b0238ea6d1" style="width: 100.0%; height: 100.0%;">         <b>See you soon shows</b><br>         Berlin, DE<br>         Contact: <br><a href="https://www.instagram.com/seeyousoonshows">insta</a></div>`)[0];
+                popup_19122c003aea542844629c068c14e85d.setContent(html_6eaa9cf71c1b0983049e11b0238ea6d1);
+            
+        
+
+        marker_339287bf6dae547a5924bc41d5bdc38b.bindPopup(popup_19122c003aea542844629c068c14e85d)
+        ;
+
+        
+    
+    
+                marker_339287bf6dae547a5924bc41d5bdc38b.setIcon(icon_d733279b8d53a709597b16d86eff9c25);
+            
+    
+            var marker_fe9ec7b17fe90f1b0c5cf69e04da871b = L.marker(
+                [52.5173885, 13.3951309],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_86ae04262b45260371837ad92d75a764 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_938bb2eb8cdf54e0628feea8649f997a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d837080d57decf853ec37fc749eca5e = $(`<div id="html_4d837080d57decf853ec37fc749eca5e" style="width: 100.0%; height: 100.0%;">         <b>Potzblitz</b><br>         Berlin, DE<br>         Contact: <br><a href="https://www.instagram.com/potzblitzkollektiv">insta</a></div>`)[0];
+                popup_938bb2eb8cdf54e0628feea8649f997a.setContent(html_4d837080d57decf853ec37fc749eca5e);
+            
+        
+
+        marker_fe9ec7b17fe90f1b0c5cf69e04da871b.bindPopup(popup_938bb2eb8cdf54e0628feea8649f997a)
+        ;
+
+        
+    
+    
+                marker_fe9ec7b17fe90f1b0c5cf69e04da871b.setIcon(icon_86ae04262b45260371837ad92d75a764);
+            
+    
+            var marker_2277acad260875c944453fa568247b6e = L.marker(
+                [50.4950632, 12.1346523],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_931c40c8568bf157e1425161174aeec5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b7ce54585ac0170eeb5e36d913b39c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ce003ed70555bf763eee3fd4d858e8e = $(`<div id="html_5ce003ed70555bf763eee3fd4d858e8e" style="width: 100.0%; height: 100.0%;">         <b>Projekt Schuldenberg</b><br>         Plauen, DE<br>         Contact: konzis@projekt-schuldenberg.net<br><a href="https://www.projekt-schuldenberg.net/">web</a></div>`)[0];
+                popup_7b7ce54585ac0170eeb5e36d913b39c5.setContent(html_5ce003ed70555bf763eee3fd4d858e8e);
+            
+        
+
+        marker_2277acad260875c944453fa568247b6e.bindPopup(popup_7b7ce54585ac0170eeb5e36d913b39c5)
+        ;
+
+        
+    
+    
+                marker_2277acad260875c944453fa568247b6e.setIcon(icon_931c40c8568bf157e1425161174aeec5);
+            
+    
+            var marker_44c2976eb888722651adc1b35608e67b = L.marker(
+                [50.0874654, 14.4212535],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_84c54ca3d053a74433dbde6523edf89c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_accc5f365bb242b77c62c01053a86db5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3b8b5fdea56979a8c67cabc3b6dd22e = $(`<div id="html_e3b8b5fdea56979a8c67cabc3b6dd22e" style="width: 100.0%; height: 100.0%;">         <b>Mad duck booking</b><br>         Praha, CZ<br>         Contact: <br><a href="https://www.instagram.com/madduckbooking/">insta</a></div>`)[0];
+                popup_accc5f365bb242b77c62c01053a86db5.setContent(html_e3b8b5fdea56979a8c67cabc3b6dd22e);
+            
+        
+
+        marker_44c2976eb888722651adc1b35608e67b.bindPopup(popup_accc5f365bb242b77c62c01053a86db5)
+        ;
+
+        
+    
+    
+                marker_44c2976eb888722651adc1b35608e67b.setIcon(icon_84c54ca3d053a74433dbde6523edf89c);
+            
+    
+            var marker_cb603b4548cb1b5fc13e949294ea32d8 = L.marker(
+                [50.0874654, 14.4212535],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_1bf67281b56c3e766e8b669e1415653e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95750f59afb41f8d8f1ba752c7759c44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b4324be7612fdf2d23ff19c2aed87d3 = $(`<div id="html_8b4324be7612fdf2d23ff19c2aed87d3" style="width: 100.0%; height: 100.0%;">         <b>Na Druhé Straně Řeky</b><br>         Praha, CZ<br>         Contact: <br><a href="https://nadruhestranereky.cz">web</a> | <a href="https://www.instagram.com/na_druhe_strane_reky/">insta</a></div>`)[0];
+                popup_95750f59afb41f8d8f1ba752c7759c44.setContent(html_8b4324be7612fdf2d23ff19c2aed87d3);
+            
+        
+
+        marker_cb603b4548cb1b5fc13e949294ea32d8.bindPopup(popup_95750f59afb41f8d8f1ba752c7759c44)
+        ;
+
+        
+    
+    
+                marker_cb603b4548cb1b5fc13e949294ea32d8.setIcon(icon_1bf67281b56c3e766e8b669e1415653e);
+            
+    
+            var marker_eb6301e959975e01cc4e6805c1381e8a = L.marker(
+                [50.0874654, 14.4212535],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_faca0a934b24df4d9633dec838cc940a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_356a7051ec7753b64be09121cccade83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3c8a9604ec390c99562406567067a21 = $(`<div id="html_f3c8a9604ec390c99562406567067a21" style="width: 100.0%; height: 100.0%;">         <b>Cross Club</b><br>         Praha, CZ<br>         Contact: <br><a href="https://linktr.ee/crossclubprague">web</a> | <a href="https://www.instagram.com/crossclubofficial/">insta</a></div>`)[0];
+                popup_356a7051ec7753b64be09121cccade83.setContent(html_f3c8a9604ec390c99562406567067a21);
+            
+        
+
+        marker_eb6301e959975e01cc4e6805c1381e8a.bindPopup(popup_356a7051ec7753b64be09121cccade83)
+        ;
+
+        
+    
+    
+                marker_eb6301e959975e01cc4e6805c1381e8a.setIcon(icon_faca0a934b24df4d9633dec838cc940a);
+            
+    
+            var marker_41c8e35d380a19feb38932e7d265a9dd = L.marker(
+                [50.0874654, 14.4212535],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_a7f328ce2cacd312f39b04257582479b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce2ba24d3b9743ccf194ae33a60ad705 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd0c6518ec3e2dd8540bc7e7f52426d1 = $(`<div id="html_cd0c6518ec3e2dd8540bc7e7f52426d1" style="width: 100.0%; height: 100.0%;">         <b>Knockout Booking</b><br>         Praha, CZ<br>         Contact: agency@knockout-booking.cz<br><a href="https://www.knockout-booking.cz/">web</a> | <a href="https://www.facebook.com/knockout.booking/">fb</a></div>`)[0];
+                popup_ce2ba24d3b9743ccf194ae33a60ad705.setContent(html_cd0c6518ec3e2dd8540bc7e7f52426d1);
+            
+        
+
+        marker_41c8e35d380a19feb38932e7d265a9dd.bindPopup(popup_ce2ba24d3b9743ccf194ae33a60ad705)
+        ;
+
+        
+    
+    
+                marker_41c8e35d380a19feb38932e7d265a9dd.setIcon(icon_a7f328ce2cacd312f39b04257582479b);
+            
+    
+            var marker_f0ea5ae5fd11c5dc3b14bb27000ed220 = L.marker(
+                [50.0874654, 14.4212535],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_86599d9abfad1190670b7b3d7c2e68df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbc4f3ede2c2bbe92487144bc4a591ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21aaa154d2b48268e9f2d3e1e62a3ce9 = $(`<div id="html_21aaa154d2b48268e9f2d3e1e62a3ce9" style="width: 100.0%; height: 100.0%;">         <b>Balada</b><br>         Praha, CZ<br>         Contact: <br><a href="https://www.instagram.com/baladapraha/">insta</a> | <a href="https://www.facebook.com/baladabarpraha/">fb</a></div>`)[0];
+                popup_cbc4f3ede2c2bbe92487144bc4a591ca.setContent(html_21aaa154d2b48268e9f2d3e1e62a3ce9);
+            
+        
+
+        marker_f0ea5ae5fd11c5dc3b14bb27000ed220.bindPopup(popup_cbc4f3ede2c2bbe92487144bc4a591ca)
+        ;
+
+        
+    
+    
+                marker_f0ea5ae5fd11c5dc3b14bb27000ed220.setIcon(icon_86599d9abfad1190670b7b3d7c2e68df);
+            
+    
+            var marker_8c615a0eb4cf2a239af0beca9f434236 = L.marker(
+                [50.0874654, 14.4212535],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_b1ed920cef8e2a5090211f30234dd599 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72570d581203022a55f3ab251cfd004a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23fbc56c27e2da61d10520a4e32e4563 = $(`<div id="html_23fbc56c27e2da61d10520a4e32e4563" style="width: 100.0%; height: 100.0%;">         <b>Hluch Crew</b><br>         Praha, CZ<br>         Contact: hluch@email.cz<br><a href="https://www.facebook.com/hluchcrew/">fb</a></div>`)[0];
+                popup_72570d581203022a55f3ab251cfd004a.setContent(html_23fbc56c27e2da61d10520a4e32e4563);
+            
+        
+
+        marker_8c615a0eb4cf2a239af0beca9f434236.bindPopup(popup_72570d581203022a55f3ab251cfd004a)
+        ;
+
+        
+    
+    
+                marker_8c615a0eb4cf2a239af0beca9f434236.setIcon(icon_b1ed920cef8e2a5090211f30234dd599);
+            
+    
+            var marker_0d51089393d1c9465d3bf6c4dd3cf471 = L.marker(
+                [50.0874654, 14.4212535],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_874ecb0dfcdd0fd77cd266e9fac28f39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5962848c3ffbbc6dbf0dd9ef3a58cd07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cb0413a40d3f8a49ffe09745a2b2866 = $(`<div id="html_4cb0413a40d3f8a49ffe09745a2b2866" style="width: 100.0%; height: 100.0%;">         <b>No Traitors Booking</b><br>         Praha, CZ<br>         Contact: notraitorsbooking@gmail.com<br><a href="https://www.instagram.com/notraitorsbooking/">insta</a></div>`)[0];
+                popup_5962848c3ffbbc6dbf0dd9ef3a58cd07.setContent(html_4cb0413a40d3f8a49ffe09745a2b2866);
+            
+        
+
+        marker_0d51089393d1c9465d3bf6c4dd3cf471.bindPopup(popup_5962848c3ffbbc6dbf0dd9ef3a58cd07)
+        ;
+
+        
+    
+    
+                marker_0d51089393d1c9465d3bf6c4dd3cf471.setIcon(icon_874ecb0dfcdd0fd77cd266e9fac28f39);
+            
+    
+            var marker_8f78672733b23217db37b7d10cd96f17 = L.marker(
+                [50.7702648, 15.0583947],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_ce618194952cb4975f04139ea36e1f59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5054f8283ac4295d7c4944a3db26c8d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_821cf750f7c5c7c726f703eb7750dcfc = $(`<div id="html_821cf750f7c5c7c726f703eb7750dcfc" style="width: 100.0%; height: 100.0%;">         <b>Azyl Pivni Bar</b><br>         Liberec, CZ<br>         Contact: azyl-pivnibar@seznam.cz<br><a href="https://www.instagram.com/azyl_liberec">insta</a> | <a href="https://www.facebook.com/profile.php?id=100063452266786">fb</a></div>`)[0];
+                popup_5054f8283ac4295d7c4944a3db26c8d3.setContent(html_821cf750f7c5c7c726f703eb7750dcfc);
+            
+        
+
+        marker_8f78672733b23217db37b7d10cd96f17.bindPopup(popup_5054f8283ac4295d7c4944a3db26c8d3)
+        ;
+
+        
+    
+    
+                marker_8f78672733b23217db37b7d10cd96f17.setIcon(icon_ce618194952cb4975f04139ea36e1f59);
+            
+    
+            var marker_33f4287c4231eca3f44cfd5af01e917e = L.marker(
+                [49.7477415, 13.3775249],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_fc19b49183cf6ccd8cfbe0220e29f2d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7ec75d09a128349c2c24b6d97d93cad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_037820806ecff75b94a8de5b2cfe1ce2 = $(`<div id="html_037820806ecff75b94a8de5b2cfe1ce2" style="width: 100.0%; height: 100.0%;">         <b>DiyPilsen Gigs</b><br>         Plzeň, CZ<br>         Contact: <br><a href="https://www.facebook.com/diypilsen.gigs">fb</a></div>`)[0];
+                popup_b7ec75d09a128349c2c24b6d97d93cad.setContent(html_037820806ecff75b94a8de5b2cfe1ce2);
+            
+        
+
+        marker_33f4287c4231eca3f44cfd5af01e917e.bindPopup(popup_b7ec75d09a128349c2c24b6d97d93cad)
+        ;
+
+        
+    
+    
+                marker_33f4287c4231eca3f44cfd5af01e917e.setIcon(icon_fc19b49183cf6ccd8cfbe0220e29f2d2);
+            
+    
+            var marker_d89d87240e40e73c12455667a9f0d57b = L.marker(
+                [49.7477415, 13.3775249],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_3fcd6e3ad54e5a84d82cd8940758af27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5764751af7a23e9142f3b383ca83837b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92fa0074e8d6df4417fd1c7bb6600f30 = $(`<div id="html_92fa0074e8d6df4417fd1c7bb6600f30" style="width: 100.0%; height: 100.0%;">         <b>U Toutatise</b><br>         Plzeň, CZ<br>         Contact: <br><a href="https://instagram.com/_utoutatise_">insta</a> | <a href="https://www.facebook.com/profile.php?id=100083235615429">fb</a></div>`)[0];
+                popup_5764751af7a23e9142f3b383ca83837b.setContent(html_92fa0074e8d6df4417fd1c7bb6600f30);
+            
+        
+
+        marker_d89d87240e40e73c12455667a9f0d57b.bindPopup(popup_5764751af7a23e9142f3b383ca83837b)
+        ;
+
+        
+    
+    
+                marker_d89d87240e40e73c12455667a9f0d57b.setIcon(icon_3fcd6e3ad54e5a84d82cd8940758af27);
+            
+    
+            var marker_c6831e42d8caf8b80347652d75f57d18 = L.marker(
+                [49.3951183, 13.2935954],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_2550b7d572290661871b8ece296bc6ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8efb805c1187e2343e9f58300a11abc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9b929e7114131d84b0a196f3fcbd286 = $(`<div id="html_a9b929e7114131d84b0a196f3fcbd286" style="width: 100.0%; height: 100.0%;">         <b>Falcon Club</b><br>         Klatovy, CZ<br>         Contact: <br><a href="https://www.instagram.com/falcon_club/">insta</a></div>`)[0];
+                popup_e8efb805c1187e2343e9f58300a11abc.setContent(html_a9b929e7114131d84b0a196f3fcbd286);
+            
+        
+
+        marker_c6831e42d8caf8b80347652d75f57d18.bindPopup(popup_e8efb805c1187e2343e9f58300a11abc)
+        ;
+
+        
+    
+    
+                marker_c6831e42d8caf8b80347652d75f57d18.setIcon(icon_2550b7d572290661871b8ece296bc6ed);
+            
+    
+            var marker_3ae650cf8f9874fa37a470e8e9acbab2 = L.marker(
+                [48.584614, 7.7507127],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_813f2fdec0dec51840e98d6018665a3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b285da77342951231804ff11d305a35f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ac4f18d8705b66092c8b8dfe14aabd3 = $(`<div id="html_3ac4f18d8705b66092c8b8dfe14aabd3" style="width: 100.0%; height: 100.0%;">         <b>Maison Mimir</b><br>         Strasbourg, FR<br>         Contact: <br><a href="https://azqs.com/maison-mimir">web</a> | <a href="https://www.instagram.com/maison.mimir/">insta</a></div>`)[0];
+                popup_b285da77342951231804ff11d305a35f.setContent(html_3ac4f18d8705b66092c8b8dfe14aabd3);
+            
+        
+
+        marker_3ae650cf8f9874fa37a470e8e9acbab2.bindPopup(popup_b285da77342951231804ff11d305a35f)
+        ;
+
+        
+    
+    
+                marker_3ae650cf8f9874fa37a470e8e9acbab2.setIcon(icon_813f2fdec0dec51840e98d6018665a3f);
+            
+    
+            var marker_1a3fb28c6c648a74b3674250d3f7f9fb = L.marker(
+                [47.2654296, 11.3927685],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_83fc357e9ce992154ff296b93ce2388c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_275b6bb3de674cdf470bdc5f8e2540a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80df7aa9fcac5ed22b263421d4f76231 = $(`<div id="html_80df7aa9fcac5ed22b263421d4f76231" style="width: 100.0%; height: 100.0%;">         <b>GURX Turmoil</b><br>         Innsbruck, AT<br>         Contact: gurxturmoil@autistici.org<br><a href="https://www.instagram.com/gurx.turmoil/">insta</a> | <a href="https://www.facebook.com/gurxturmoil">fb</a></div>`)[0];
+                popup_275b6bb3de674cdf470bdc5f8e2540a6.setContent(html_80df7aa9fcac5ed22b263421d4f76231);
+            
+        
+
+        marker_1a3fb28c6c648a74b3674250d3f7f9fb.bindPopup(popup_275b6bb3de674cdf470bdc5f8e2540a6)
+        ;
+
+        
+    
+    
+                marker_1a3fb28c6c648a74b3674250d3f7f9fb.setIcon(icon_83fc357e9ce992154ff296b93ce2388c);
+            
+    
+            var marker_517d97f30e7103b99120675469526e72 = L.marker(
+                [47.0708678, 15.4382786],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_98926933cda595f77afe766abc265cc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_106c8cc5e78abf6f4cd035e3efb17472 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12756c341507efc1accd03cc8524be22 = $(`<div id="html_12756c341507efc1accd03cc8524be22" style="width: 100.0%; height: 100.0%;">         <b>SUb Graz</b><br>         Graz, AT<br>         Contact: <br><a href="https://subsubsub.at">web</a> | <a href="https://www.instagram.com/sub_gradec">insta</a></div>`)[0];
+                popup_106c8cc5e78abf6f4cd035e3efb17472.setContent(html_12756c341507efc1accd03cc8524be22);
+            
+        
+
+        marker_517d97f30e7103b99120675469526e72.bindPopup(popup_106c8cc5e78abf6f4cd035e3efb17472)
+        ;
+
+        
+    
+    
+                marker_517d97f30e7103b99120675469526e72.setIcon(icon_98926933cda595f77afe766abc265cc0);
+            
+    
+            var marker_4ae9a819ac5a549bcbab84599de41615 = L.marker(
+                [47.0708678, 15.4382786],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_ab503355a81ff0e23f38221838f29d27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d86cf25b2dcb70444cfca94c2eb67c8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2fd5b2f89372f5b6348f7ae747d25c1 = $(`<div id="html_e2fd5b2f89372f5b6348f7ae747d25c1" style="width: 100.0%; height: 100.0%;">         <b>No Show</b><br>         Graz, AT<br>         Contact: noshow_diy@riseup.net<br><a href="https://www.instagram.com/noshowdiy/">insta</a></div>`)[0];
+                popup_d86cf25b2dcb70444cfca94c2eb67c8e.setContent(html_e2fd5b2f89372f5b6348f7ae747d25c1);
+            
+        
+
+        marker_4ae9a819ac5a549bcbab84599de41615.bindPopup(popup_d86cf25b2dcb70444cfca94c2eb67c8e)
+        ;
+
+        
+    
+    
+                marker_4ae9a819ac5a549bcbab84599de41615.setIcon(icon_ab503355a81ff0e23f38221838f29d27);
+            
+    
+            var marker_db2d197d05461fd3c65e448779e8320a = L.marker(
+                [48.2083537, 16.3725042],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_2801e348b44572c37484b72b1d3f266c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd4a6b38e4fe0b478bf9a6390cafd743 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e120d2e92aac4c1de00e625dda41f73c = $(`<div id="html_e120d2e92aac4c1de00e625dda41f73c" style="width: 100.0%; height: 100.0%;">         <b>AIMD</b><br>         Wien, AT<br>         Contact: <br><a href="https://www.instagram.com/aimd____/">insta</a></div>`)[0];
+                popup_dd4a6b38e4fe0b478bf9a6390cafd743.setContent(html_e120d2e92aac4c1de00e625dda41f73c);
+            
+        
+
+        marker_db2d197d05461fd3c65e448779e8320a.bindPopup(popup_dd4a6b38e4fe0b478bf9a6390cafd743)
+        ;
+
+        
+    
+    
+                marker_db2d197d05461fd3c65e448779e8320a.setIcon(icon_2801e348b44572c37484b72b1d3f266c);
+            
+    
+            var marker_f635fdc5cc6abe76f0d1d824adc97ffe = L.marker(
+                [48.2083537, 16.3725042],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_212ff1c04eecbe67c51c556656c1390e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df5a3afbc7a40e55a89ef5299f8c7e4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09782eeca22e473666b2d18c4872dac6 = $(`<div id="html_09782eeca22e473666b2d18c4872dac6" style="width: 100.0%; height: 100.0%;">         <b>Hardcore For The Losers</b><br>         Wien, AT<br>         Contact: hardcoreforthelosers@gmail.com<br><a href="https://hc4lzs.blogspot.com/">web</a> | <a href="https://www.facebook.com/HardcoreForTheLosers">fb</a></div>`)[0];
+                popup_df5a3afbc7a40e55a89ef5299f8c7e4b.setContent(html_09782eeca22e473666b2d18c4872dac6);
+            
+        
+
+        marker_f635fdc5cc6abe76f0d1d824adc97ffe.bindPopup(popup_df5a3afbc7a40e55a89ef5299f8c7e4b)
+        ;
+
+        
+    
+    
+                marker_f635fdc5cc6abe76f0d1d824adc97ffe.setIcon(icon_212ff1c04eecbe67c51c556656c1390e);
+            
+    
+            var marker_2cfd5979ea9c1805fa0175bb40494840 = L.marker(
+                [48.3059078, 14.286198],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_8c88ecf9a25b4496a6b06178023c2a41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4313c780e512f506e446b86558d61d8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc381ad7454fe3f3996dcf2e53fc6f51 = $(`<div id="html_dc381ad7454fe3f3996dcf2e53fc6f51" style="width: 100.0%; height: 100.0%;">         <b>Von bis DIY</b><br>         Linz, AT<br>         Contact: <br><a href="https://www.instagram.com/von.bis.diy">insta</a></div>`)[0];
+                popup_4313c780e512f506e446b86558d61d8c.setContent(html_dc381ad7454fe3f3996dcf2e53fc6f51);
+            
+        
+
+        marker_2cfd5979ea9c1805fa0175bb40494840.bindPopup(popup_4313c780e512f506e446b86558d61d8c)
+        ;
+
+        
+    
+    
+                marker_2cfd5979ea9c1805fa0175bb40494840.setIcon(icon_8c88ecf9a25b4496a6b06178023c2a41);
+            
+    
+            var marker_1e6ae53232e9f0ca64b56106f1b2dd56 = L.marker(
+                [45.4641943, 9.1896346],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_e869d5d887e2120a5f728cf205868bb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b234181328ac3dd06bd6b6b32914441c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad51f67d30344d5ecef94ce43ec47956 = $(`<div id="html_ad51f67d30344d5ecef94ce43ec47956" style="width: 100.0%; height: 100.0%;">         <b>Ali di cera</b><br>         Milano, IT<br>         Contact: alidiceradiy@gmail.com<br><a href="https://www.instagram.com/alidiceradiy/">insta</a> | <a href="https://www.facebook.com/profile.php?id=100084614529529">fb</a></div>`)[0];
+                popup_b234181328ac3dd06bd6b6b32914441c.setContent(html_ad51f67d30344d5ecef94ce43ec47956);
+            
+        
+
+        marker_1e6ae53232e9f0ca64b56106f1b2dd56.bindPopup(popup_b234181328ac3dd06bd6b6b32914441c)
+        ;
+
+        
+    
+    
+                marker_1e6ae53232e9f0ca64b56106f1b2dd56.setIcon(icon_e869d5d887e2120a5f728cf205868bb4);
+            
+    
+            var marker_00209840013afa8342318fc0a63047bb = L.marker(
+                [51.1089776, 17.0326689],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_3a7927526d8ee98851bdd82e322a8a44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18459b8de6e5e1853c58389c0d2ab8fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ac054c3812ed47a214d9c66026ae04b = $(`<div id="html_0ac054c3812ed47a214d9c66026ae04b" style="width: 100.0%; height: 100.0%;">         <b>OCSK Postój</b><br>         Wrocław, PL<br>         Contact: ocsk-postoj@riseup.net<br><a href="https://postoj.org">web</a> | <a href="https://www.instagram.com/postoj_ocsk">insta</a> | <a href="https://www.facebook.com/ocskpostoj/">fb</a></div>`)[0];
+                popup_18459b8de6e5e1853c58389c0d2ab8fd.setContent(html_0ac054c3812ed47a214d9c66026ae04b);
+            
+        
+
+        marker_00209840013afa8342318fc0a63047bb.bindPopup(popup_18459b8de6e5e1853c58389c0d2ab8fd)
+        ;
+
+        
+    
+    
+                marker_00209840013afa8342318fc0a63047bb.setIcon(icon_3a7927526d8ee98851bdd82e322a8a44);
+            
+    
+            var marker_d2d009a4639c4d4b070c846b26abb7b7 = L.marker(
+                [52.2319581, 21.0067249],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_c82df3638f4491f73fda2d79dead0a2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2ccade75c7e191a89cf57a4556ce5ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_657b40a70379e310c18dace40ae07f50 = $(`<div id="html_657b40a70379e310c18dace40ae07f50" style="width: 100.0%; height: 100.0%;">         <b>a. d. a. puławska</b><br>         Warszawa, PL<br>         Contact: koncerty@adapulawska.org<br><a href="https://adapulawska.org/kontakt">web</a> | <a href="https://www.instagram.com/ada__pulawska">insta</a></div>`)[0];
+                popup_c2ccade75c7e191a89cf57a4556ce5ab.setContent(html_657b40a70379e310c18dace40ae07f50);
+            
+        
+
+        marker_d2d009a4639c4d4b070c846b26abb7b7.bindPopup(popup_c2ccade75c7e191a89cf57a4556ce5ab)
+        ;
+
+        
+    
+    
+                marker_d2d009a4639c4d4b070c846b26abb7b7.setIcon(icon_c82df3638f4491f73fda2d79dead0a2b);
+            
+    
+            var marker_6b3cc07450da705b4ada490ca819aebf = L.marker(
+                [57.0462626, 9.9215263],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_ac9aa9a44a4a2e11837ba217a76b4ecc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81b0b41c40939395ceb76c6e2ce81b94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5361d687a77c5c886f9028b81ba79021 = $(`<div id="html_5361d687a77c5c886f9028b81ba79021" style="width: 100.0%; height: 100.0%;">         <b>1000FRYD</b><br>         Aalborg, DK<br>         Contact: <br><a href="https://www.1000fryd.dk">web</a> | <a href="https://www.instagram.com/1000fryd/">insta</a> | <a href="https://www.facebook.com/Cafe1000Fryd">fb</a></div>`)[0];
+                popup_81b0b41c40939395ceb76c6e2ce81b94.setContent(html_5361d687a77c5c886f9028b81ba79021);
+            
+        
+
+        marker_6b3cc07450da705b4ada490ca819aebf.bindPopup(popup_81b0b41c40939395ceb76c6e2ce81b94)
+        ;
+
+        
+    
+    
+                marker_6b3cc07450da705b4ada490ca819aebf.setIcon(icon_ac9aa9a44a4a2e11837ba217a76b4ecc);
+            
+    
+            var marker_cdfd808e0a07b935de208b2a71b790b6 = L.marker(
+                [48.3767652, 17.5858175],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_277db347205414f9ee4cebd8b97b7fd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90e176e5eff519bc5cb54ee6000a01ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cee32adde6182b1444fc59fd8439a9a = $(`<div id="html_0cee32adde6182b1444fc59fd8439a9a" style="width: 100.0%; height: 100.0%;">         <b>salto mortale music</b><br>         Trnava, SK<br>         Contact: sust@riseup.net<br><a href="https://www.instagram.com/salto_mortale_music/">insta</a> | <a href="https://www.facebook.com/diysaltomortalemusic">fb</a></div>`)[0];
+                popup_90e176e5eff519bc5cb54ee6000a01ee.setContent(html_0cee32adde6182b1444fc59fd8439a9a);
+            
+        
+
+        marker_cdfd808e0a07b935de208b2a71b790b6.bindPopup(popup_90e176e5eff519bc5cb54ee6000a01ee)
+        ;
+
+        
+    
+    
+                marker_cdfd808e0a07b935de208b2a71b790b6.setIcon(icon_277db347205414f9ee4cebd8b97b7fd1);
+            
+    
+            var marker_c98a75548406d658bbcd7ce731e0561c = L.marker(
+                [48.3767652, 17.5858175],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_40e10ce8e182fbd065f1ade096c6fe21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51800c401766cb94815cfde4f4f05a0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_549df8a88367504c2feec34a1c9e419d = $(`<div id="html_549df8a88367504c2feec34a1c9e419d" style="width: 100.0%; height: 100.0%;">         <b>KUBIK</b><br>         Trnava, SK<br>         Contact: <br><a href="https://tvorimekraj.trnava-vuc.sk/domov">web</a> | <a href="https://www.instagram.com/p/DQoYi_ojEi7/">insta</a></div>`)[0];
+                popup_51800c401766cb94815cfde4f4f05a0d.setContent(html_549df8a88367504c2feec34a1c9e419d);
+            
+        
+
+        marker_c98a75548406d658bbcd7ce731e0561c.bindPopup(popup_51800c401766cb94815cfde4f4f05a0d)
+        ;
+
+        
+    
+    
+                marker_c98a75548406d658bbcd7ce731e0561c.setIcon(icon_40e10ce8e182fbd065f1ade096c6fe21);
+            
+    
+            var marker_941c890e5c9e48739dbe13cd9a140868 = L.marker(
+                [48.1559178, 17.1313541],
+                {
+  "iconColor": "green",
+}
+            ).addTo(marker_cluster_0be434cd5a6af18a872ccc39bf0c6403);
+        
+    
+            var icon_e3ed98f1941bad4ea318f945904fe100 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "#6fab25",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa475d2a7dff712312aaba19709d67fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4268383ab9bfd4725b2a9e222fc5fa46 = $(`<div id="html_4268383ab9bfd4725b2a9e222fc5fa46" style="width: 100.0%; height: 100.0%;">         <b>Koncerty na Garážach</b><br>         Bratislava, SK<br>         Contact: jahodovepole@gmail.com<br><a href="https://www.instagram.com/na_garazach">insta</a> | <a href="https://www.facebook.com/koncertynagarazach">fb</a></div>`)[0];
+                popup_fa475d2a7dff712312aaba19709d67fa.setContent(html_4268383ab9bfd4725b2a9e222fc5fa46);
+            
+        
+
+        marker_941c890e5c9e48739dbe13cd9a140868.bindPopup(popup_fa475d2a7dff712312aaba19709d67fa)
+        ;
+
+        
+    
+    
+                marker_941c890e5c9e48739dbe13cd9a140868.setIcon(icon_e3ed98f1941bad4ea318f945904fe100);
+            
+    
+            marker_cluster_0be434cd5a6af18a872ccc39bf0c6403.addTo(feature_group_819eb8b21496d6faab837ae092286f43);
+        
+    
+            feature_group_819eb8b21496d6faab837ae092286f43.addTo(map_304abd8a0a05e4200e5e1a38cdfed079);
+        
+    
+            var layer_control_d9e9a3ef326666399b12883588eb781d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1e9172a0b07512987e9dc037ccfa852c,
+                    "cartodbpositron" : tile_layer_8471fa95fe0ab8490faa42aeb65e9742,
+                },
+                overlays :  {
+                    "filtered out" : feature_group_c8ba4b2fd67393b170568e1ba10a8493,
+                    "venues" : feature_group_819eb8b21496d6faab837ae092286f43,
+                },
+            };
+            let layer_control_d9e9a3ef326666399b12883588eb781d = L.control.layers(
+                layer_control_d9e9a3ef326666399b12883588eb781d_layers.base_layers,
+                layer_control_d9e9a3ef326666399b12883588eb781d_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_304abd8a0a05e4200e5e1a38cdfed079);
+
+        
+</script>
+</html>
